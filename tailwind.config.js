@@ -8,49 +8,32 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        current: "currentColor",
-        transparent: "transparent",
+        // Base colors
         white: "#FFFFFF",
         black: "#1C2434",
-        "black-2": "#010101",
-        body: "#64748B",
-        bodydark: "#AEB7C0",
-        bodydark1: "#DEE4EE",
-        bodydark2: "#8A99AF",
-        bodydark3: "#2C3342",
 
-        primary: "#A0182F",
-        secondary: "#292549",
-        // brandColor: "#ED1E23",
-        brandColor: "#ED1C1C",
+        // Brand colors
+        primary: "##ff633c",
+        secondary: "#F8F9FA",
+        tertiary: "#F5F5F5",
+        quaternary: "#000000",
+        stick: "#E2E8F0",
 
-        brandColor2: "#001A94",
-        brandColor2Dark: "#08088F",
-
+        // Gray colors
         stroke: "#E2E8F0",
         gray: "#EFF4FB",
-        graydark: "#333A48",
-        "gray-2": "#F7F9FC",
-        "gray-3": "#FAFAFA",
         whiten: "#F1F5F9",
         whiter: "#F5F7FD",
-        boxdark: "#24303F",
-        "boxdark-2": "#1A222C",
-        strokedark: "#2E3A47",
-        "form-strokedark": "#3d4d60",
-        "form-input": "#1d2a39",
-        "meta-1": "#D13026",
-        "meta-2": "#EFF2F7",
-        "meta-3": "#10B981",
-        "meta-4": "#313D4A",
-        "meta-5": "#259AE6",
-        "meta-6": "#FFBA00",
-        "meta-7": "#FF6766",
-        "meta-8": "#F0950C",
-        "meta-9": "#E5E7EB",
+
+        // status
         success: "#219653",
         danger: "#D34053",
         warning: "#FFA70B",
+        info: "#2F80ED",
+        light: "#F8F9FA",
+        dark: "#343A40",
+        muted: "#6C757D",
+        white: "#FFFFFF",
       },
       fontSize: {
         "title-xxl": ["44px", "55px"],

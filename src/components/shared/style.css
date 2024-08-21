@@ -1,0 +1,40 @@
+.nav-link,
+.drop-down li {
+  height: 100%;
+
+  cursor: pointer;
+}
+
+.drop-down {
+  position: absolute;
+  padding: 0.5rem;
+
+  display: none;
+}
+
+.nav-link:hover {
+  border-radius: 0.5rem;
+}
+
+.services:hover .drop-down {
+  display: block;
+}
+
+.services .dropdown-icon {
+  position: relative;
+  right: -5px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out all;
+}
+
+.services:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.drop-down li:hover {
+  border-radius: 0.5rem;
+}
+.active {
+  color: rgb(26, 15, 4) !important;
+  text-decoration: underline 1px !important;
+}

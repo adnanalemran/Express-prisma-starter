@@ -1,14 +1,13 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-
+import heroImage from "@/utils/images/large/pexels-divinetechygirl-1181271.jpg";
 const HeroSection = () => {
   return (
     <div>
       <div
-        className="hero min-h-[83vh] "
+        className="hero min-h-[95vh] "
         style={{
-          backgroundImage:
-            "url(https://static.vecteezy.com/system/resources/previews/001/948/166/original/orange-and-black-squares-abstract-tech-banner-design-geometric-background-vector.jpg)",
+          backgroundImage: `url(${heroImage.src})`,
         }}
       >
         <div className="hero-overlay bg-opacity-70"></div>

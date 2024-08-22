@@ -3,7 +3,7 @@ import React from "react";
 const ServiceItem = () => {
   return (
     <div>
-      <section className="text-gray-600 body-font overflow-hidden">
+      <section className="text-gray-600 body-font overflow-hidden pb-10">
         <div className="container px-5  mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
@@ -92,7 +92,7 @@ const ServiceItem = () => {
                   PRO
                 </h2>
                 <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                  SaaS Product
+                  SaaS <br /> Product
                 </h1>
                 <p className="flex items-center text-gray-600 mb-2">
                   <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -183,7 +183,7 @@ const ServiceItem = () => {
                   BUSINESS
                 </h2>
                 <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                  Mobile APP
+                  Mobile <br /> APP
                 </h1>
                 <p className="flex items-center text-gray-600 mb-2">
                   <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -290,7 +290,7 @@ const ServiceItem = () => {
                   SPECIAL
                 </h2>
                 <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                  Desktops APP
+                  Desktops <br /> APP
                 </h1>
                 <p className="flex items-center text-gray-600 mb-2">
                   <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">

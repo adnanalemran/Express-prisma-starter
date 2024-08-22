@@ -11,7 +11,7 @@ const Tabs = () => {
   };
 
   return (
-    <div className="pb-16 pt-24">
+    <div className="pb-16 pt-10">
       <h2 className="text-4xl font-bold text-center lg:text-left py-8 flex  justify-center text-black">
         We Work internationally
       </h2>
@@ -36,10 +36,70 @@ const Tabs = () => {
             onClick={() => openCity("thai")}
           >
             Thai <FaChevronRight />
+          </button>{" "}
+          <button
+            className={`rounded-lg w-full flex items-center justify-between p-2 mt-2 text-left cursor-pointer transition duration-300 text-lg font-medium ${
+              activeTab === "Banglades"
+                ? "bg-primary text-white "
+                : "bg-gray-50 text-gray-700 hover:bg-gray-100"
+            }`}
+            onClick={() => openCity("Bangladesh")}
+          >
+            Bangladesh <FaChevronRight />
           </button>
+          <button
+            className={` rounded-lg w-full flex items-center justify-between p-2  mt-2 text-left cursor-pointer transition duration-300 text-lg font-medium ${
+              activeTab === "tha"
+                ? "bg-primary text-white "
+                : "bg-gray-50 text-gray-700 hover:bg-gray-100"
+            }`}
+            onClick={() => openCity("thai")}
+          >
+            Thai <FaChevronRight />
+          </button>{" "}
+          <button
+            className={`rounded-lg w-full flex items-center justify-between p-2 mt-2 text-left cursor-pointer transition duration-300 text-lg font-medium ${
+              activeTab === "Banglades"
+                ? "bg-primary text-white "
+                : "bg-gray-50 text-gray-700 hover:bg-gray-100"
+            }`}
+            onClick={() => openCity("Bangladesh")}
+          >
+            Bangladesh <FaChevronRight />
+          </button>
+          <button
+            className={` rounded-lg w-full flex items-center justify-between p-2  mt-2 text-left cursor-pointer transition duration-300 text-lg font-medium ${
+              activeTab === "tha"
+                ? "bg-primary text-white "
+                : "bg-gray-50 text-gray-700 hover:bg-gray-100"
+            }`}
+            onClick={() => openCity("thai")}
+          >
+            Thai <FaChevronRight />
+          </button>{" "}
+          <button
+            className={`rounded-lg w-full flex items-center justify-between p-2 mt-2 text-left cursor-pointer transition duration-300 text-lg font-medium ${
+              activeTab === "Banglades"
+                ? "bg-primary text-white "
+                : "bg-gray-50 text-gray-700 hover:bg-gray-100"
+            }`}
+            onClick={() => openCity("Bangladesh")}
+          >
+            Bangladesh <FaChevronRight />
+          </button>
+          <button
+            className={` rounded-lg w-full flex items-center justify-between p-2  mt-2 text-left cursor-pointer transition duration-300 text-lg font-medium ${
+              activeTab === "tha"
+                ? "bg-primary text-white "
+                : "bg-gray-50 text-gray-700 hover:bg-gray-100"
+            }`}
+            onClick={() => openCity("thai")}
+          >
+            Thai <FaChevronRight />
+          </button>{" "}
         </div>
 
-        <div className="tabcontent w-full md:w-3/4  bg-white ">
+        <div className="  w-full md:w-3/4  bg-white ">
           {activeTab === "Bangladesh" && (
             <div className=" transition duration-300 ">
               <BangladeshTab />

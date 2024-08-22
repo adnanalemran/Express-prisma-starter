@@ -4,11 +4,10 @@ import React from "react";
 const ButtonPrimary = ({ text, sideLink }) => {
   return (
     <div>
-      <Link
-        href={sideLink}
-        className="bg-primary hover:bg-red-800 border-none text-white ml-4 btn-md rounded-full btn "
-      >
-        {text}
+      <Link href={sideLink}>
+        <button className=" bg-white  text-secondary py-2 rounded-full px-4 hover:text-black border-[2px]  ">
+          {text}
+        </button>
       </Link>
     </div>
   );

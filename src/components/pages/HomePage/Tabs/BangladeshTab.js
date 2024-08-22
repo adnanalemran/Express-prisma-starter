@@ -9,7 +9,6 @@ const BangladeshTab = () => {
         backgroundImage: `url(${bgImage.src})`,
       }}
     >
-      {/* <div className="hero-overlay bg-opacity-60"></div>  */}
       <div className="hero-content text-neutral-content text-center">
         <div className="  text-black">
           <h2 className="text-2xl">
@@ -18,7 +17,7 @@ const BangladeshTab = () => {
           <p className="mb-5">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.{" "}
+            a id nisi.
           </p>
           <ButtonPrimary text="Get Started" sideLink="/" />
         </div>

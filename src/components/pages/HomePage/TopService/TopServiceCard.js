@@ -11,7 +11,7 @@ const TopServiceCard = (props) => {
       <div className="card bg-base-100 w-96   transform transition-transform duration-100 ease-in-out hover:scale-105 shadow-md  hover:shadow-lg cursor-pointer  ">
         <figure>
           <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            src="https://thumbs.dreamstime.com/b/internet-information-technology-concept-laptop-computer-showing-data-processing-screen-122397310.jpg"
             alt="Shoes"
           />
         </figure>

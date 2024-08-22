@@ -3,10 +3,9 @@ import heroImage1 from "@/utils/images/large/smartphone-6265047_640.jpg";
 import TopServiceCard from "./TopService/TopServiceCard";
 
 const ProductView = () => {
-  console.log("heroImage1", heroImage1);
   return (
     <div>
-      <div className="pt-16 pb-8 container mx-auto text-black ">
+      <div className="  pb-8 container mx-auto text-black ">
         <h2 className="text-4xl font-bold text-center lg:text-left py-8 flex  justify-center">
           Introduce our top notch product
         </h2>

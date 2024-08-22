@@ -13,8 +13,8 @@ module.exports = {
         black: "#1C2434",
 
         // Brand colors
-        primary: "##ff633c",
-        secondary: "#F8F9FA",
+        primary: "#ff633c",
+        secondary: "#747474",
         tertiary: "#F5F5F5",
         quaternary: "#000000",
         stick: "#E2E8F0",

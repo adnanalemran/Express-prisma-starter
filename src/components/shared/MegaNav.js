@@ -5,8 +5,11 @@ import { TiArrowSortedDown } from "react-icons/ti";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { LanNavBar } from "@/app/language/Lan-NavBar";
+import useLanguage from "@/hook/useLanguage";
 
 const MegaNav = () => {
+  const lan = useLanguage(LanNavBar);
   const pathname = usePathname();
   return (
     <div>
@@ -23,7 +26,7 @@ const MegaNav = () => {
                     }`}
                   >
                     <span className="flex gap-2 items-center ">
-                      <MdHome /> <p>Home </p>
+                      <MdHome /> <p>{lan?.Home} </p>
                     </span>
                   </Link>
                 </li>
@@ -35,7 +38,7 @@ const MegaNav = () => {
                     }`}
                   >
                     <span className="flex gap-3 items-center ">
-                      <p>Services</p> <TiArrowSortedDown />
+                      <p> {lan?.Services} </p> <TiArrowSortedDown />
                     </span>
                   </Link>
                 </li>
@@ -47,7 +50,7 @@ const MegaNav = () => {
                     }`}
                   >
                     <span className="flex gap-3 items-center ">
-                      <p>Expertise </p> <TiArrowSortedDown />
+                      <p>{lan?.Expertise} </p> <TiArrowSortedDown />
                     </span>
                   </Link>
                 </li>
@@ -59,7 +62,7 @@ const MegaNav = () => {
                     }`}
                   >
                     <span className="flex gap-3 items-center ">
-                      <p>Portfolio </p> <TiArrowSortedDown />
+                      <p>{lan?.Portfolio} </p> <TiArrowSortedDown />
                     </span>
                   </Link>
                 </li>
@@ -71,7 +74,7 @@ const MegaNav = () => {
                     }`}
                   >
                     <span className="flex gap-3 items-center ">
-                      <p>Partners </p> <TiArrowSortedDown />
+                      <p>{lan?.Partners} </p> <TiArrowSortedDown />
                     </span>
                   </Link>
                 </li>
@@ -83,7 +86,7 @@ const MegaNav = () => {
                     }`}
                   >
                     <span className="flex gap-3 items-center ">
-                      <p>About </p>
+                      <p>{lan?.About} </p>
                       <TiArrowSortedDown />
                     </span>
                   </Link>
@@ -96,7 +99,7 @@ const MegaNav = () => {
                     }`}
                   >
                     <span className="flex gap-3 items-center ">
-                      <p>Contacts </p>{" "}
+                      <p>{lan?.Contacts} </p>{" "}
                     </span>
                   </Link>
                 </li>

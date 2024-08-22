@@ -5,11 +5,16 @@ import { usePathname } from "next/navigation";
 import "./HeaderStyle.css";
 import Link from "next/link";
 import Image from "next/image";
+import { LanNavBar } from "../../app/language/Lan-NavBar";
 
 import NavMobile from "./NavMobile";
 import MegaNav from "./MegaNav";
+import { LanguageSwitcher } from "../LanguageSwitcher";
+import { useLanguageContext } from "@/context/LanguageContext";
+import useLanguage from "@/hook/useLanguage";
 
 const Navbar = () => {
+  const lan = useLanguage(LanNavBar);
   const pathname = usePathname();
 
   return (
@@ -22,9 +27,10 @@ const Navbar = () => {
             </Link>
           </div>
           <div>
-            <div className="lg:flex gap-0 text-xs items-center justify-center hidden">
+            <div className="lg:flex gap-0   items-center justify-center hidden">
+              <LanguageSwitcher />
               <ul>
-                <span className="text-base "> </span>
+                <span className="text-base "></span>
 
                 <Link
                   href="tel:+8809617209581"

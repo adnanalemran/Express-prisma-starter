@@ -3,13 +3,20 @@ import { createContext, useState, useEffect, useContext } from "react";
 
 export const LanguageContext = createContext();
 export const useLanguageContext = () => useContext(LanguageContext);
+
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState(() => {
-    return localStorage.getItem("language") || "english";
+    if (typeof window !== "undefined") {
+      const localLanguage = window.localStorage.getItem("language");
+      return localLanguage || "defaultLanguage"; // Replace "defaultLanguage" with your default language
+    }
+    return "defaultLanguage"; // Replace "defaultLanguage" with your default language
   });
 
   useEffect(() => {
-    localStorage.setItem("language", language);
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("language", language);
+    }
   }, [language]);
 
   const switchLanguage = (lang) => setLanguage(lang);

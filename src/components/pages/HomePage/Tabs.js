@@ -3,6 +3,7 @@ import BangladeshTab from "./Tabs/BangladeshTab";
 import Thaitab from "./Tabs/thaitab";
 import { FaChevronRight } from "react-icons/fa6";
 import SecTitle from "@/components/common/SecTitle";
+import MalaysiaPartnerOffice from "./Tabs/MalaysiaTab";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("bd");
@@ -96,7 +97,7 @@ digital reality"
           )}{" "}
           {activeTab === "Malaysia" && (
             <div className=" transition duration-300 ">
-              <Thaitab />
+              <MalaysiaPartnerOffice />
             </div>
           )}{" "}
           {activeTab === "usa" && (

@@ -1,4 +1,4 @@
-import { MdHome, MdOutlineArrowDropDown } from "react-icons/md";
+import { MdHome } from "react-icons/md";
 
 import "./style.css";
 import { TiArrowSortedDown } from "react-icons/ti";

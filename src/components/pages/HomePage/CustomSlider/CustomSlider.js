@@ -5,9 +5,11 @@ import image2 from "@/utils/images/sliderImage/img2.jpg";
 import image3 from "@/utils/images/sliderImage/img3.jpg";
 import image4 from "@/utils/images/sliderImage/img4.jpg";
 import ButtonPrimary from "@/components/common/ButtonPrimary";
-import Image from "next/image";
 
 import hrLogo from "@/utils/images/logo/hr.png";
+import ipLogo from "@/utils/images/logo/ip.png";
+import swLogo from "@/utils/images/logo/sw.png";
+import apLogo from "@/utils/images/logo/ap.png";
 const CustomSlider = () => {
   useEffect(() => {
     const nextBtn = document.querySelector(".next");
@@ -46,13 +48,12 @@ const CustomSlider = () => {
       );
     };
 
-    // const interval = setInterval(() => moveSlider("next"), 10000);
+    const interval = setInterval(() => moveSlider("next"), 10000);
 
     nextBtn.onclick = () => moveSlider("next");
     prevBtn.onclick = () => moveSlider("prev");
 
-    // return () => clearInterval(interval);
-    return () => clearInterval();
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -75,55 +76,83 @@ const CustomSlider = () => {
               consectetur adipisicing elit. Sequi, aut.
             </div>
             <div className="button">
-              <ButtonPrimary text="SEE MORE" sideLink="/" />
+              <ButtonPrimary text="SEE MORE" sideLink="https://hrbee.xyz/" />
             </div>
           </div>
-        </div>
+        </div>{" "}
         <div className="item">
           <img src={image2.src} alt="" />
-          <div className="content">
-            <div className="title">HR Bee</div>
+          <div className="content w-full    ">
+            <div className="title text-6xl flex w-full justify-between   ">
+              <span>Inventory Pro</span>{" "}
+              <div className="w-44 bg-white rounded-xl ">
+                <img src={ipLogo.src} alt="hr logo" className=" w-full" />
+              </div>
+            </div>
 
-            <div className="description">
+            <div className="description max-w-100 py-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
               temporibus quis eum consequuntur voluptate quae doloribus
               distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
               consectetur adipisicing elit. Sequi, aut.
             </div>
             <div className="button">
-              <ButtonPrimary text="SEE MORE" sideLink="/" />
+              <ButtonPrimary
+                text="SEE MORE"
+                sideLink="http://inventorypro.xyz/"
+              />
             </div>
           </div>
         </div>
         <div className="item">
           <img src={image3.src} alt="" />
-          <div className="content">
-            <div className="title">HR SLIDER</div>
-            <div className="type">PLANT</div>
-            <div className="description">
+          <div className="content w-full    ">
+            <div className="title text-6xl flex w-full justify-between   ">
+              <span>sinewy care</span>{" "}
+              <div className="     ">
+                <img
+                  src={swLogo.src}
+                  alt="  logo"
+                  className=" object-fill h-48 w-96"
+                />
+              </div>
+            </div>
+
+            <div className="description max-w-100 py-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
               temporibus quis eum consequuntur voluptate quae doloribus
               distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
               consectetur adipisicing elit. Sequi, aut.
             </div>
             <div className="button">
-              <ButtonPrimary text="SEE MORE" sideLink="/" />
+              <ButtonPrimary
+                text="SEE MORE"
+                sideLink="http://inventorypro.xyz/"
+              />
             </div>
           </div>
         </div>
         <div className="item">
           <img src={image4.src} alt="" />
-          <div className="content">
-            <div className="title">Apart Pro</div>
-            <div className="type">NATURE</div>
-            <div className="description">
+          <div className="content w-full    ">
+            <div className="title text-6xl flex w-full justify-between   ">
+              <span>Apart Pro</span>{" "}
+              <div className="    w-34  bg-white rounded-xl p-4 ">
+                <img src={apLogo.src} alt="  logo" className=" w-full" />
+              </div>
+            </div>
+
+            <div className="description max-w-100 py-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
               temporibus quis eum consequuntur voluptate quae doloribus
               distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
               consectetur adipisicing elit. Sequi, aut.
             </div>
             <div className="button">
-              <ButtonPrimary text="SEE MORE" sideLink="/" />
+              <ButtonPrimary
+                text="SEE MORE"
+                sideLink="https://www.apartpro.xyz/"
+              />
             </div>
           </div>
         </div>

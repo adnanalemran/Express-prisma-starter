@@ -12,7 +12,6 @@ import TrustedSection from "@/components/pages/HomePage/TrustedSection";
 import StatusCount from "@/components/pages/HomePage/StatusCount";
 import ContactHomeSection from "@/components/pages/HomePage/ContactHomeSection";
 import OurJourney from "@/components/pages/HomePage/ourJourney";
-import CustomSlider from "@/components/pages/HomePage/CustomSlider/CustomSlider";
 
 export default function Home() {
   const lan = useLanguage(homePageLanguage);
@@ -25,7 +24,7 @@ export default function Home() {
       <OurService />
       <Tabs />
       <StatusFlow />
-      <OurJourney />
+      {/* <OurJourney /> */}
       <TrustedSection />
       <StatusCount />
       <ContactHomeSection />

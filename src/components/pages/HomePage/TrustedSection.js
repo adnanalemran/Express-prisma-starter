@@ -79,6 +79,42 @@ const TrustedSection = () => {
             alt="client"
             className="h-16"
           />
+        </div>{" "}
+        <div className="flex justify-center items-center">
+          <Image
+            width={150}
+            height={150}
+            src={image1}
+            alt="client"
+            className="h-16"
+          />
+        </div>{" "}
+        <div className="flex justify-center items-center">
+          <Image
+            width={150}
+            height={150}
+            src={image1}
+            alt="client"
+            className="h-16"
+          />
+        </div>{" "}
+        <div className="flex justify-center items-center">
+          <Image
+            width={150}
+            height={150}
+            src={image1}
+            alt="client"
+            className="h-16"
+          />
+        </div>{" "}
+        <div className="flex justify-center items-center">
+          <Image
+            width={150}
+            height={150}
+            src={image1}
+            alt="client"
+            className="h-16"
+          />
         </div>
       </div>
     </div>

@@ -6,14 +6,14 @@ const OurService = () => {
   return (
     <>
       <div
-        className="hero min-h-[100vh] -mt-48 "
+        className="hero min-h-[80vh] -mt-48 "
         style={{
           backgroundImage: `url(${bgImage.src})`,
         }}
       >
         {/* <div className="hero-overlay bg-opacity-60"></div> */}
-        <div className="hero-content text-neutral-content text-center">
-          <h2 className="text-4xl font-bold text-center lg:text-left py-8 flex  justify-center text-black">
+        <div className="hero-content text-neutral-content text-center  ">
+          <h2 className=" mt-16 text-4xl font-bold text-center       text-black">
             Introduce our top notch service
           </h2>
         </div>

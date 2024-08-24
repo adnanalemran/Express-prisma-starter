@@ -1,14 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import image1 from "@/utils/images/svg/Mastercard.svg";
+import SecTitle from "@/components/common/SecTitle";
 
 const TrustedSection = () => {
   return (
-    <div className="container mx-auto py-16">
-      <h2 className="text-4xl font-bold text-center lg:text-left py-8 flex  justify-center text-black">
-        Trusted by over 400+ clients served worldwide
-      </h2>
-      <div className="grid grid-cols-4 justify-center items-center gap-8 px-30 pt-10">
+    <div className="container mx-auto py-8 pb-16">
+      <SecTitle title="Trusted by over 400+ clients Zaimah Tech.  worldwide" />
+      <div className="grid grid-cols-4 justify-center items-center gap-6 px-36 pt-10">
         <div className="flex justify-center items-center">
           <Image
             width={150}

@@ -1,14 +1,16 @@
 import React from "react";
 import heroImage1 from "@/utils/images/large/smartphone-6265047_640.jpg";
 import TopServiceCard from "./TopService/TopServiceCard";
+import SecTitle from "@/components/common/SecTitle";
 
 const ProductView = () => {
   return (
     <div>
-      <div className="  pb-8 container mx-auto text-black ">
-        <h2 className="text-4xl font-bold text-center lg:text-left py-8 flex  justify-center">
-          Introduce our top notch product
-        </h2>
+      <div className="   container mx-auto text-black ">
+        <div className="pt-8">
+          <SecTitle title=" How we bring tangible business results  " />
+          <h3 className="text-xl ">our top notch product</h3>{" "}
+        </div>
 
         <div className="px-4">
           <div className="  pt-8 flex flex-col lg:flex-row justify-start items-center lg-flex-row gap-2 lg:gap-4   ">

@@ -1,15 +1,17 @@
+import SecTitle from "@/components/common/SecTitle";
 import React from "react";
 
 const OurJourney = () => {
   return (
-    <div className="pt-6">
-      <h2 className="text-4xl font-bold text-center lg:text-left py-8 flex  justify-center">
-        Our product development journey
-      </h2>
+    <div className="pt-8 container mx-auto">
+      <div className="flex justify-start  ">
+        <SecTitle title="   Our product development journey" />
+      </div>
+
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-16 mx-auto flex flex-wrap">
+        <div className="container px-5 py-2 mx-auto flex flex-wrap">
           <div className="flex flex-wrap w-full">
-            <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+            <div className="lg:w-full   md:pr-10 md:py-6">
               <div className="flex relative pb-12">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
@@ -146,11 +148,6 @@ const OurJourney = () => {
                 </div>
               </div>
             </div>
-            <img
-              className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-              src="https://blog.mindmanager.com/wp-content/uploads/2022/11/Background-1.png"
-              alt="step"
-            />
           </div>
         </div>
       </section>

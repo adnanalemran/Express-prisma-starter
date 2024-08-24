@@ -4,11 +4,9 @@ const StatusFlowPoint = (props) => {
   const { year, text } = props;
   return (
     <div>
-      <div className="flex flex-col items-center text-white">
-        <div className="flex items-center justify-center w-22 h-22   text-6xl">
-          {year}
-        </div>
-        <p className="text-center">{text}</p>
+      <div className="flex flex-col   text-white">
+        <div className=" text-6xl ">{year}</div>
+        <p className="text-left mt-4">{text}</p>
       </div>
     </div>
   );

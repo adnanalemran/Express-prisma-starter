@@ -10,12 +10,11 @@ const OurService = () => {
   return (
     <>
       <div
-        className="hero min-h-[80vh] -mt-48 "
+        className="hero min-h-[90vh] -mt-48 "
         style={{
           backgroundImage: `url(${bgImage.src})`,
         }}
       >
-        {/* <div className="hero-overlay bg-opacity-60"></div> */}
         <div className="hero-content    w-full flex justify-start  ">
           <h2 className=" mt-16     text-black">
             <SecTitle

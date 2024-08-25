@@ -1,3 +1,4 @@
+"use client";
 import { MdHome } from "react-icons/md";
 
 import "./style.css";

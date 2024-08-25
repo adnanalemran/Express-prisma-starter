@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import "./CustomSlider.css";
 import image1 from "@/utils/images/sliderImage/img11.jpg";
@@ -79,7 +80,7 @@ const CustomSlider = () => {
             </div>
             <div className="button">
               <ButtonPrimary
-                  text={len?.seeMore}
+                text={len?.seeMore}
                 sideLink={len?.productSec?.Product1?.url}
               />
             </div>
@@ -100,7 +101,7 @@ const CustomSlider = () => {
             </div>
             <div className="button">
               <ButtonPrimary
-                  text={len?.seeMore}
+                text={len?.seeMore}
                 sideLink={len?.productSec?.Product2?.url}
               />
             </div>
@@ -146,7 +147,7 @@ const CustomSlider = () => {
             </div>
             <div className="button">
               <ButtonPrimary
-                  text={len?.seeMore}
+                text={len?.seeMore}
                 sideLink={len?.productSec?.Product4?.url}
               />
             </div>

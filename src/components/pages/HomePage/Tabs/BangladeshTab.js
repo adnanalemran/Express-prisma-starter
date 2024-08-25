@@ -48,9 +48,12 @@ const BangladeshTab = () => {
               </p>
             </div>
             <div className="py-6 md:w-1/2">
-              <h3 className="text-xl font-semibold">Our Expertise:</h3>
+              <h3 className="text-xl font-semibold">
+                {len?.tabsSec?.Bangladesh?.Expertise}
+                {len?.contactUs}
+              </h3>
 
-              <ul className="list-disc list-inside mt-4">
+              <ul className="list-disc list-inside mt-2">
                 {len?.tabsSec?.Bangladesh?.OurExpertise.map(
                   (expertise, index) => (
                     <li key={index}>{expertise}</li>
@@ -60,7 +63,7 @@ const BangladeshTab = () => {
             </div>
           </div>
           <div className="flex justify-end">
-            <ButtonPrimary text="Contact Us" sideLink="/contact" />
+            <ButtonPrimary text={len?.contactUs} sideLink="/contact" />
           </div>
         </div>
       </div>

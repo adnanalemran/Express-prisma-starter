@@ -10,7 +10,8 @@ const english = {
 
   productSec: {
     title: "How we bring tangible business results",
-    sub1: "We help businesses to grow and scale by leveraging technology and digital solutions.",
+    subtitle:
+      "We help businesses to grow and scale by leveraging technology and digital solutions.",
     Product1: {
       name: "HR BEE",
       description:
@@ -38,7 +39,8 @@ const english = {
   },
   serviceSec: {
     title: "Our Services",
-    sub1: "We provide a wide range of services to help businesses grow and scale.",
+    subtitle:
+      "We provide a wide range of services to help businesses grow and scale.",
   },
 };
 
@@ -54,7 +56,7 @@ const thai = {
 
   productSec: {
     title: "เรานำผลลัพธ์ที่แท้จริงทางธุรกิจมาได้อย่างไร",
-    sub1: "เราช่วยธุรกิจเติบโตและขยายด้วยการใช้เทคโนโลยีและโซลูชันดิจิทัล",
+    subtitle: "เราช่วยธุรกิจเติบโตและขยายด้วยการใช้เทคโนโลยีและโซลูชันดิจิทัล",
     Product1: {
       name: "HR BEE",
       description:

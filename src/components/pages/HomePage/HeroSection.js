@@ -1,7 +1,11 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import heroImage from "@/utils/images/large/pexels-divinetechygirl-1181271.jpg";
+import useLanguage from "@/hook/useLanguage";
+import { homePageLanguage } from "@/app/language/Lan-homepage";
+
 const HeroSection = () => {
+  const lan = useLanguage(homePageLanguage);
   return (
     <div>
       <div
@@ -14,19 +18,17 @@ const HeroSection = () => {
         <div className="hero-content  text-white  ">
           <div className=" ">
             <div className="  gap-3  items-center  ">
-              <h1 className="text-5xl font-bold mb-22 mt-16">
-                Zaimah Technologies Limited (Thai)
-              </h1>{" "}
+              <h1 className="text-5xl font-bold mb-22 mt-16">{lan?.ZTLThai}</h1>{" "}
             </div>
             <TypeAnimation
               sequence={[
-                "Empowering Businesses Through Technology",
+                ` ${lan?.sub1}`,
                 1000,
-                "Innovating Digital Solutions for Growth",
+                ` ${lan?.sub2}`,
                 1000,
-                "Transforming Ideas into Reality",
+                ` ${lan?.sub3}`,
                 1000,
-                "Delivering Excellence in Every Project",
+                ` ${lan?.sub4}`,
                 1000,
               ]}
               wrapper="span"
@@ -35,14 +37,10 @@ const HeroSection = () => {
               repeat={Infinity}
             />
 
-            <p className="mb-5">
-              We involves leveraging various digital tools, platforms, and
-              strategies to enhance efficiency, productivity, innovation, and
-              overall competitiveness.
-            </p>
+            <p className="mb-5">{lan?.productSec?.sub1}</p>
 
             <button className=" bg-white  text-secondary py-2 rounded-full px-4 hover:text-black border-[2px]  ">
-              Get Started
+              {lan?.getStarted}
             </button>
           </div>
         </div>

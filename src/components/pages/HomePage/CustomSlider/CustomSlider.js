@@ -10,7 +10,12 @@ import hrLogo from "@/utils/images/logo/hr.png";
 import ipLogo from "@/utils/images/logo/ip.png";
 import swLogo from "@/utils/images/logo/sw.png";
 import apLogo from "@/utils/images/logo/ap.png";
+import useLanguage from "@/hook/useLanguage";
+import { homePageLanguage } from "@/app/language/Lan-homepage";
+
 const CustomSlider = () => {
+  const len = useLanguage(homePageLanguage);
+
   useEffect(() => {
     const nextBtn = document.querySelector(".next");
     const prevBtn = document.querySelector(".prev");
@@ -63,20 +68,20 @@ const CustomSlider = () => {
           <img src={image1.src} alt="" />
           <div className="content w-full    ">
             <div className="title text-6xl flex w-full justify-between   ">
-              <span>HR BEE </span>{" "}
+              <span>{len?.productSec?.Product1?.name}</span>{" "}
               <div className="w-44 ">
                 <img src={hrLogo.src} alt="hr logo" className=" w-full" />
               </div>
             </div>
 
             <div className="description max-w-100 py-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              temporibus quis eum consequuntur voluptate quae doloribus
-              distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sequi, aut.
+              {len?.productSec?.Product1?.description}
             </div>
             <div className="button">
-              <ButtonPrimary text="SEE MORE" sideLink="https://hrbee.xyz/" />
+              <ButtonPrimary
+                text="SEE MORE"
+                sideLink={len?.productSec?.Product1?.url}
+              />
             </div>
           </div>
         </div>{" "}
@@ -84,22 +89,19 @@ const CustomSlider = () => {
           <img src={image2.src} alt="" />
           <div className="content w-full    ">
             <div className="title text-6xl flex w-full justify-between   ">
-              <span>Inventory Pro</span>{" "}
+              <span>{len?.productSec?.Product2?.name}</span>{" "}
               <div className="w-44 bg-white rounded-xl ">
                 <img src={ipLogo.src} alt="hr logo" className=" w-full" />
               </div>
             </div>
 
             <div className="description max-w-100 py-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              temporibus quis eum consequuntur voluptate quae doloribus
-              distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sequi, aut.
+              {len?.productSec?.Product2?.description}
             </div>
             <div className="button">
               <ButtonPrimary
                 text="SEE MORE"
-                sideLink="http://inventorypro.xyz/"
+                sideLink={len?.productSec?.Product2?.url}
               />
             </div>
           </div>
@@ -108,7 +110,7 @@ const CustomSlider = () => {
           <img src={image3.src} alt="" />
           <div className="content w-full    ">
             <div className="title text-6xl flex w-full justify-between   ">
-              <span>sinewy care</span>{" "}
+              <span>{len?.productSec?.Product3?.name}</span>{" "}
               <div className="     ">
                 <img
                   src={swLogo.src}
@@ -119,15 +121,12 @@ const CustomSlider = () => {
             </div>
 
             <div className="description max-w-100 py-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              temporibus quis eum consequuntur voluptate quae doloribus
-              distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sequi, aut.
+              {len?.productSec?.Product3?.description}
             </div>
             <div className="button">
               <ButtonPrimary
                 text="SEE MORE"
-                sideLink="http://inventorypro.xyz/"
+                sideLink={len?.productSec?.Product3?.url}
               />
             </div>
           </div>
@@ -136,22 +135,19 @@ const CustomSlider = () => {
           <img src={image4.src} alt="" />
           <div className="content w-full    ">
             <div className="title text-6xl flex w-full justify-between   ">
-              <span>Apart Pro</span>{" "}
+              <span>{len?.productSec?.Product4?.name}</span>{" "}
               <div className="    w-34  bg-white rounded-xl p-4 ">
                 <img src={apLogo.src} alt="  logo" className=" w-full" />
               </div>
             </div>
 
             <div className="description max-w-100 py-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              temporibus quis eum consequuntur voluptate quae doloribus
-              distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sequi, aut.
+              {len?.productSec?.Product4?.description}
             </div>
             <div className="button">
               <ButtonPrimary
                 text="SEE MORE"
-                sideLink="https://www.apartpro.xyz/"
+                sideLink={len?.productSec?.Product4?.url}
               />
             </div>
           </div>
@@ -160,19 +156,31 @@ const CustomSlider = () => {
       <div className="thumbnail">
         <div className="item">
           <img src={image4.src} alt="" />
-          <div className="-mt-8 text-white px-3"> Apart Pro</div>
+          <div className="-mt-8 text-white px-3">
+            {" "}
+            {len?.productSec?.Product4?.name}
+          </div>
         </div>
         <div className="item">
           <img src={image1.src} alt="" />
-          <div className="-mt-8 text-white px-3"> HrBee</div>
+          <div className="-mt-8 text-white px-3">
+            {" "}
+            {len?.productSec?.Product1?.name}
+          </div>
         </div>
         <div className="item">
           <img src={image2.src} alt="" />
-          <div className="-mt-8 text-white px-3"> Inventory Pro</div>
+          <div className="-mt-8 text-white px-3">
+            {" "}
+            {len?.productSec?.Product2?.name}
+          </div>
         </div>
         <div className="item">
           <img src={image3.src} alt="" />
-          <div className="-mt-8 text-white px-3"> sinewy care</div>
+          <div className="-mt-8 text-white px-3">
+            {" "}
+            {len?.productSec?.Product3?.name}
+          </div>
         </div>
       </div>
       <div className="nextPrevArrows">

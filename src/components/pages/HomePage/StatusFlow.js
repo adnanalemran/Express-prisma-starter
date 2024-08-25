@@ -9,7 +9,7 @@ const StatusFlow = () => {
         <img
           src={flowImage.src}
           alt="flow"
-          className="container mx-auto  w-full h-[100vh]"
+          className="container mx-auto  w-full lg:h-[100vh] mt-50 lg:mt-0"
         />
       </div>
     </div>

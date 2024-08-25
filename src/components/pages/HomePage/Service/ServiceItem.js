@@ -11,9 +11,9 @@ const ServiceItem = () => {
                 <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                   START
                 </h2>
-                <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
-                  Web
-                  <br />
+                <h1 className="lg:text-5xl text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
+                  Web {""}
+                  <br className="hidden lg:flex" />
                   APP
                 </h1>
                 <p className="flex items-center text-gray-600 mb-2">
@@ -91,8 +91,8 @@ const ServiceItem = () => {
                 <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                   PRO
                 </h2>
-                <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                  SaaS <br /> Product
+                <h1 className="lg:text-5xl text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
+                  SaaS Product
                 </h1>
                 <p className="flex items-center text-gray-600 mb-2">
                   <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -182,8 +182,8 @@ const ServiceItem = () => {
                 <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                   BUSINESS
                 </h2>
-                <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                  Mobile <br /> APP
+                <h1 className="lg:text-5xl text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
+                  Mobile APP
                 </h1>
                 <p className="flex items-center text-gray-600 mb-2">
                   <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -289,8 +289,8 @@ const ServiceItem = () => {
                 <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                   SPECIAL
                 </h2>
-                <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                  Desktops <br /> APP
+                <h1 className="lg:text-5xl text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
+                  Desktops APP
                 </h1>
                 <p className="flex items-center text-gray-600 mb-2">
                   <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">

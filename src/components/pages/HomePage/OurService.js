@@ -26,7 +26,7 @@ const OurService = () => {
         </div>
       </div>
 
-      <div className="pt-16 pb-8   text-black bg-[#FFB49A] ">
+      <div className="lg:pt-16 pb-8   text-black bg-[#FFB49A] ">
         <div className="container mx-auto min-h-100">
           <ServiceItem />
         </div>

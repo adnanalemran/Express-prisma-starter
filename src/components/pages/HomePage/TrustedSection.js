@@ -7,7 +7,11 @@ const TrustedSection = () => {
   return (
     <div className="container mx-auto py-8 pb-16">
       <SecTitle title="Trusted by over 400+ clients Zaimah Tech.  worldwide" />
-      <div className="grid grid-cols-4 justify-center items-center gap-6 px-36 pt-10">
+      <div
+        className="grid 
+      grid-cols-2 md:grid-cols-3
+      lg:grid-cols-4 justify-center items-center lg:gap-6 lg:px-36 pt-10"
+      >
         <div className="flex justify-center items-center">
           <Image
             width={150}

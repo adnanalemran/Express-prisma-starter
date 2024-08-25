@@ -35,7 +35,7 @@ const Navbar = () => {
     <div>
       {/* Top Navbar */}
       <div className={`min-w-26 py-4 bg-white border-b-[1px] border-stick `}>
-        <div className="container mx-auto flex items-center text-sm justify-between gap-10 px-16">
+        <div className="container mx-auto flex items-center text-sm justify-between gap-10 lg:px-16 px-4">
           <div className="lg:text-2xl font-bold flex gap-2 items-center">
             <Link href="/" className="r">
               <Image src={logoImage} width={150} alt="logo" />

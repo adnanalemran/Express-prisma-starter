@@ -45,7 +45,7 @@ const english = {
       "We provide a wide range of services to help businesses grow and scale.",
   },
   tabsSec: {
-    title: "Helping organizations grow in the new digital reality",
+    title: "Network of ZTL Offices",
     subtitle:
       "We follow a systematic process to ensure that we deliver the best results.",
     Bangladesh: {

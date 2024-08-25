@@ -5,8 +5,8 @@ const StatusFlowPoint = (props) => {
   return (
     <div>
       <div className="flex flex-col   text-white">
-        <div className=" text-6xl ">{year}</div>
-        <p className="text-left mt-4">{text}</p>
+        <div className=" lg:text-6xl text-3xl ">{year}</div>
+        <p className="text-left mt-4 lg:text-base text-sm ">{text}</p>
       </div>
     </div>
   );

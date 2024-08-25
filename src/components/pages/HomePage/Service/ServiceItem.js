@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRight, FaCheck } from "react-icons/fa6";
 
 const ServiceItem = () => {
   return (
@@ -11,72 +12,23 @@ const ServiceItem = () => {
                 <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                   START
                 </h2>
-                <h1 className="lg:text-5xl text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
-                  Web {""}
-                  <br className="hidden lg:flex" />
-                  APP
+                <h1 className="lg:text-4xl text-2xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
+                  Cloud Computing Solutions
                 </h1>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Scalable cloud architecture
                 </p>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Tumeric plaid portland
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Data security and backup
                 </p>
-                <p className="flex items-center text-gray-600 mb-6">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Mixtape chillwave tumeric
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Cost-effective cloud services
                 </p>
-                <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">
-                  Button
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    className="w-4 h-4 ml-auto"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
+                <button className="flex items-center justify-between gap mt-auto  text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">
+                  Button <FaArrowRight />
                 </button>
                 <p className="text-xs text-gray-500 mt-3">
                   Literally you probably heard of them jean shorts.
@@ -91,72 +43,36 @@ const ServiceItem = () => {
                 <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                   PRO
                 </h2>
-                <h1 className="lg:text-5xl text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
-                  SaaS Product
+                <h1 className="lg:text-4xl text-2xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
+                  SaaS Product Development
                 </h1>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Cost-effective cloud services
                 </p>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Tumeric plaid portland
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  User Management and Authentication
                 </p>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Hexagon neutra unicorn
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Billing and Subscription Management
                 </p>
-                <p className="flex items-center text-gray-600 mb-6">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Mixtape chillwave tumeric
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  API Integration and Management
+                </p>{" "}
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Data Analytics and Reporting
+                </p>{" "}
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Customer Support and Helpdesk Integration
+                </p>{" "}
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Security and Compliance Management
                 </p>
                 <button className="flex items-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">
                   Button
@@ -182,89 +98,44 @@ const ServiceItem = () => {
                 <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                   BUSINESS
                 </h2>
-                <h1 className="lg:text-5xl text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
-                  Mobile APP
+                <h1 className="lg:text-4xl text-2xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
+                  IT Auditing & Consulting
                 </h1>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  IT Infrastructure Audits
                 </p>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Tumeric plaid portland
+
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Cybersecurity Audits Compliance Audits
                 </p>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Hexagon neutra unicorn
+
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  IT Risk Management Consulting
                 </p>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
+
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Technology Strategy Consulting
                 </p>
-                <p className="flex items-center text-gray-600 mb-6">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Mixtape chillwave tumeric
+
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Cloud Readiness and Migration Consulting
                 </p>
+
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  IT Governance Consulting
+                </p>
+
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Business Continuity Planning
+                </p>
+
                 <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">
                   Button
                   <svg
@@ -289,89 +160,22 @@ const ServiceItem = () => {
                 <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                   SPECIAL
                 </h2>
-                <h1 className="lg:text-5xl text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
-                  Desktops APP
+                <h1 className="lg:text-4xl text-2xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
+                  E-Commerce Website Development
                 </h1>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Mobile-friendly design
                 </p>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Tumeric plaid portland
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  SEO optimization
                 </p>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Hexagon neutra unicorn
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
+                  <FaCheck />
+                  Secure payment systems
                 </p>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Vexillologist pitchfork
-                </p>
-                <p className="flex items-center text-gray-600 mb-6">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Mixtape chillwave tumeric
-                </p>
+
                 <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">
                   Button
                   <svg

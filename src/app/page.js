@@ -11,11 +11,10 @@ import StatusFlow from "@/components/pages/HomePage/StatusFlow";
 import TrustedSection from "@/components/pages/HomePage/TrustedSection";
 import StatusCount from "@/components/pages/HomePage/StatusCount";
 import ContactHomeSection from "@/components/pages/HomePage/ContactHomeSection";
-import OurJourney from "@/components/pages/HomePage/ourJourney";
 
 export default function Home() {
   const lan = useLanguage(homePageLanguage);
-  // console.log(lan);
+
   return (
     <main>
       <HeroSection />

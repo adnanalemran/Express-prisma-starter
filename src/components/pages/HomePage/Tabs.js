@@ -4,8 +4,11 @@ import Thaitab from "./Tabs/thaitab";
 import { FaChevronRight } from "react-icons/fa6";
 import SecTitle from "@/components/common/SecTitle";
 import MalaysiaPartnerOffice from "./Tabs/MalaysiaTab";
+import { homePageLanguage } from "@/app/language/Lan-homepage";
+import useLanguage from "@/hook/useLanguage";
 
 const Tabs = () => {
+  const len = useLanguage(homePageLanguage);
   const [activeTab, setActiveTab] = useState("bd");
 
   const openCity = (cityName) => {
@@ -14,18 +17,8 @@ const Tabs = () => {
 
   return (
     <div className="pb-8 pt-10 container mx-auto">
-      <SecTitle
-        title="Helping organizations grow in the new
-digital reality"
-      />
-      <h3 className=" text-xl py-4">
-        We don’t just build what you want, we build what you need!
-      </h3>{" "}
-      <h3 className=" ">
-        Zaimah Technologies Limited is an international digital transformation
-        driver that powers leading businesses to transform, survive and grow,
-        with feasible, viable, and desirable digital products and solutions.
-      </h3>
+      <SecTitle title={len?.tabsSec?.title} subtitle={len?.tabsSec?.subtitle} />
+
       <div className="mt-10 flex flex-col md:flex-row   rounded-lg  p-3  container mx-auto   bg-[#ffb39a27]">
         <div className="tab w-full md:w-1/4  pl-0   ">
           <button

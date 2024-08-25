@@ -79,7 +79,7 @@ const CustomSlider = () => {
             </div>
             <div className="button">
               <ButtonPrimary
-                text="SEE MORE"
+                  text={len?.seeMore}
                 sideLink={len?.productSec?.Product1?.url}
               />
             </div>
@@ -100,7 +100,7 @@ const CustomSlider = () => {
             </div>
             <div className="button">
               <ButtonPrimary
-                text="SEE MORE"
+                  text={len?.seeMore}
                 sideLink={len?.productSec?.Product2?.url}
               />
             </div>
@@ -125,7 +125,7 @@ const CustomSlider = () => {
             </div>
             <div className="button">
               <ButtonPrimary
-                text="SEE MORE"
+                text={len?.seeMore}
                 sideLink={len?.productSec?.Product3?.url}
               />
             </div>
@@ -146,7 +146,7 @@ const CustomSlider = () => {
             </div>
             <div className="button">
               <ButtonPrimary
-                text="SEE MORE"
+                  text={len?.seeMore}
                 sideLink={len?.productSec?.Product4?.url}
               />
             </div>

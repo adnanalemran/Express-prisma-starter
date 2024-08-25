@@ -17,7 +17,7 @@ const OurService = () => {
       >
         {/* <div className="hero-overlay bg-opacity-60"></div> */}
         <div className="hero-content    w-full flex justify-start  ">
-          <h2 className=" mt-16 text-4xl font-bold text-        text-black">
+          <h2 className=" mt-16     text-black">
             <SecTitle
               title={len?.serviceSec?.title}
               subtitle={len?.serviceSec?.subtitle}

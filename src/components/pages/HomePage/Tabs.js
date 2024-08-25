@@ -1,11 +1,12 @@
 import { useState } from "react";
 import BangladeshTab from "./Tabs/BangladeshTab";
-import Thaitab from "./Tabs/thaitab";
+
 import { FaChevronRight } from "react-icons/fa6";
 import SecTitle from "@/components/common/SecTitle";
 import MalaysiaPartnerOffice from "./Tabs/MalaysiaTab";
 import { homePageLanguage } from "@/app/language/Lan-homepage";
 import useLanguage from "@/hook/useLanguage";
+import Thaitab from "./Tabs/Thaitab";
 
 const Tabs = () => {
   const len = useLanguage(homePageLanguage);

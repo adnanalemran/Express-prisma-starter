@@ -9,6 +9,7 @@ const Thaitab = () => {
         backgroundImage: `url(${bgImage.src})`,
       }}
     >
+      thaitab
       <div className="hero-content text-neutral-content">
         <div className="text-black   p-6  ">
           <h2 className="text-3xl font-bold">

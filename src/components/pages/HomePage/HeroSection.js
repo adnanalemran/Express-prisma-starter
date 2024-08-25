@@ -18,14 +18,13 @@ const HeroSection = () => {
         <div className="hero-content  text-white  ">
           <div className=" ">
             <div className="  gap-3  items-center  ">
-              <h1 className="lg:text-5xl text-3xl font-bold mb-22 mt-16">
+              <h1 className="lg:text-5xl text-3xl font-bold mb-8 mt-16">
                 {lan?.ZTLThai}
               </h1>{" "}
             </div>
 
-            <div className="lg:text-3xl text-xl">{lan?.sub1}</div>
+            <div className="lg:text-xl text-xl py-8">{lan?.heroParagraph}</div>
 
-            <p className="mb-5">{lan?.productSec?.sub1}</p>
             <button className=" bg-white  text-secondary py-2 rounded-full px-4 hover:text-black border-[2px]  ">
               {lan?.getStarted}
             </button>

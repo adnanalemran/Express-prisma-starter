@@ -42,7 +42,7 @@ const BangladeshTab = () => {
               </p>
               <p>
                 <strong>{len?.tabsSec?.Bangladesh?.Industries}</strong>
-              </p>{" "}
+              </p>
               <p>
                 <strong>{len?.tabsSec?.Bangladesh?.Years}</strong>
               </p>

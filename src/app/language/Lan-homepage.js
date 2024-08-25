@@ -1,11 +1,8 @@
 const english = {
-  ZTLThai: "Zaimah Technologies Limited (Thai)",
-  sub1: "We involves leveraging various digital tools, platforms, and strategies to enhance efficiency, productivity, innovation, and overall competitiveness.",
-  sub2: "Innovating Digital Solutions for Growth",
-  sub3: "Transforming Ideas into Reality",
-  sub4: "Delivering Excellence in Every Project",
+  ZTLThai: "ZAIMAH TECHNOLOGIES (THAILAND) CO., LTD",
+
   heroParagraph:
-    "We involves leveraging various digital tools, platforms, and strategies to enhance efficiency, productivity, innovation, and overall competitiveness.",
+    "A leading force in the technology industry, driving innovation and excellence across various domains. As a power house of technology, we are committed to delivering cutting edge solutions in software development services.",
   getStarted: "Get Started",
   seeMore: "See More",
   contactUs: "Contact Us",
@@ -13,7 +10,7 @@ const english = {
   productSec: {
     title: "How we bring tangible business results",
     subtitle:
-      "We help businesses to grow and scale by leveraging technology and digital solutions.",
+      "Our homegrown SaaS products are built on state of the art technology, Do you wanna try?",
     Product1: {
       name: "HR BEE",
       description:

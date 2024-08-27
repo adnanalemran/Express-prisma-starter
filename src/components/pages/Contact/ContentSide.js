@@ -10,7 +10,7 @@ const ContentSide = () => {
       <div className="text-xl text-slate-600">Let’s work together</div>
       <SecTitle
         title="Contact our Support and Sales team"
-        subtitle="Helping to unfold next-level performance through a data-driven, digital native, engineering-inspired approach. Come and chat with us, we're all ears."
+ 
       />
 
       <div className="flex gap-4">

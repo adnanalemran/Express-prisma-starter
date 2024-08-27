@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "@/utils/images/svg/layered-waves-haikei.svg"; // Correct import for an image
+import bgImage from "@/utils/images/svg/layered-waves-haikei.svg";
 import ServiceItem from "./Service/ServiceItem";
 import SecTitle from "@/components/common/SecTitle";
 import useLanguage from "@/hook/useLanguage";
@@ -15,7 +15,7 @@ const OurService = () => {
           backgroundImage: `url(${bgImage.src})`,
         }}
       >
-        <div className="hero-content    w-full flex justify-start  ">
+        <div className=" container      w-full flex justify-start  ">
           <h2 className=" mt-16     text-black">
             <SecTitle
               title={len?.serviceSec?.title}

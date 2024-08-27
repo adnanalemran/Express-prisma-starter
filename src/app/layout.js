@@ -15,7 +15,7 @@ const switchLanguage = (lang) => setLanguage(lang);
 export default function RootLayout({ children }) {
   return (
     <LanguageProvider>
-      <html lang="en">
+     <html data-theme="light" lang="en">
         <body className={inter.className}>
           <NavBar />
 

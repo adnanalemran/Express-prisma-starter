@@ -18,7 +18,8 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <ProductView />
+  
+      <ProductView />  
       <OurService />
       <Tabs />
       <StatusFlow />

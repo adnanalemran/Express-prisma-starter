@@ -15,8 +15,8 @@ const OurService = () => {
           backgroundImage: `url(${bgImage.src})`,
         }}
       >
-        <div className=" container      w-full flex justify-start  ">
-          <h2 className=" mt-16     text-black">
+        <div className=" container    w-full flex justify-start  ">
+          <h2 className=" mt-16 lg:mx-8    text-black">
             <SecTitle
               title={len?.serviceSec?.title}
               subtitle={len?.serviceSec?.subtitle}
@@ -26,7 +26,7 @@ const OurService = () => {
       </div>
 
       <div className="lg:pt-16 pb-8   text-black bg-[#FFB49A] ">
-        <div className="container mx-auto min-h-100">
+        <div className="container mx-auto min-h-100 ">
           <ServiceItem />
         </div>
       </div>

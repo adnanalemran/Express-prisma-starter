@@ -8,9 +8,9 @@ import { homePageLanguage } from "@/app/language/Lan-homepage";
 const ProductView = () => {
   const len = useLanguage(homePageLanguage);
   return (
-    <div className="lg:flex hidden mt-10">
-      <div div className=" container mx-auto text-black ">
-        <div className="pt-8 lg:py-0 mb-200  ">
+    <div className="lg:flex hidden mt-10    ">
+      <div div className=" container mx-auto text-black  p-4">
+        <div className="pt-8 lg:py-0  lg:mx- ">
           <SecTitle
             title={len?.productSec?.title}
             subtitle={len?.productSec?.subtitle}

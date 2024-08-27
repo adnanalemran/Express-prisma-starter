@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import flowImage from "@/utils/images/svg/flow.svg";
+ 
+import flowImage from "@/utils/images/svg/flow.webp";
 
 const StatusFlow = () => {
   return (

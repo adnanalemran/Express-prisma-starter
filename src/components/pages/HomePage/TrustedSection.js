@@ -5,7 +5,7 @@ import SecTitle from "@/components/common/SecTitle";
 
 const TrustedSection = () => {
   return (
-    <div className="container mx-auto py-8 pb-16">
+    <div className="  mx-auto py-8 pb-16  lg:mx-8 ">
       <SecTitle title="Trusted by over 400+ clients Zaimah Tech.  worldwide" />
       <div
         className="grid 

@@ -16,7 +16,7 @@ const Tabs = () => {
   };
 
   return (
-    <div className="pb-8 pt-10 container mx-auto">
+    <div className="pb-8 pt-10   mx-auto  lg:mx-8   ">
       <SecTitle title={len?.tabsSec?.title} subtitle={len?.tabsSec?.subtitle} />
 
       <div className="mt-10 flex flex-col-reverse lg:flex-row rounded-lg p-3 container mx-auto bg-[#ffb39a27]">

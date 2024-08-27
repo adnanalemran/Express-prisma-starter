@@ -3,7 +3,6 @@ import { MdHome } from "react-icons/md";
 
 import "./style.css";
 import { TiArrowSortedDown } from "react-icons/ti";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LanNavBar } from "@/app/language/Lan-NavBar";

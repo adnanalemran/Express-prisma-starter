@@ -1,6 +1,5 @@
 import React from "react";
-import heroImage1 from "@/utils/images/large/smartphone-6265047_640.jpg";
-import TopServiceCard from "./TopService/TopServiceCard";
+
 import SecTitle from "@/components/common/SecTitle";
 import CustomSlider from "./CustomSlider/CustomSlider";
 import useLanguage from "@/hook/useLanguage";
@@ -17,9 +16,7 @@ const ProductView = () => {
             subtitle={len?.productSec?.subtitle}
           />
         </div>
-        <div className="pt-10">
-          <CustomSlider />
-        </div>
+        <div className="pt-10 "><CustomSlider /></div>
       </div>
     </div>
   );

@@ -63,7 +63,7 @@ const CustomSlider = () => {
   }, []);
 
   return (
-    <div className="slider container mx-auto rounded-xl lg:h-[80vh]">
+    <div className="slider container mx-auto  lg:h-[80vh] overflow-x-hidden  ">
       <div className="list">
         <div className="item">
           <img src={image1.src} alt="" />

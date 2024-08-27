@@ -9,7 +9,7 @@ import { homePageLanguage } from "@/app/language/Lan-homepage";
 const ProductView = () => {
   const len = useLanguage(homePageLanguage);
   return (
-    <div className="lg:flex hidden">
+    <div className="lg:flex hidden mt-10">
       <div div className=" container mx-auto text-black ">
         <div className="pt-8 lg:py-0 mb-200  ">
           <SecTitle

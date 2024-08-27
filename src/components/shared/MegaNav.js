@@ -8,6 +8,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LanNavBar } from "@/app/language/Lan-NavBar";
 import useLanguage from "@/hook/useLanguage";
+import Item1 from "./MegaNevItem/Item1";
 
 const MegaNav = () => {
   const lan = useLanguage(LanNavBar);
@@ -19,7 +20,7 @@ const MegaNav = () => {
           <div className="navbar-center    flex uppercase">
             <nav>
               <ul className="flex items-center justify-center font-semibold gap-1  ">
-                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full  ">
+                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full cursor-pointer  ">
                   <Link
                     href="/"
                     className={` rounded-full cursor-pointer  ${
@@ -31,7 +32,7 @@ const MegaNav = () => {
                     </span>
                   </Link>
                 </li>
-                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full  ">
+                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full cursor-pointer cursor-pointer  ">
                   <Link
                     href="/"
                     className={` rounded-full  cursor-pointer   ${
@@ -41,9 +42,12 @@ const MegaNav = () => {
                     <span className="flex gap-3 items-center ">
                       <p> {lan?.Services} </p> <TiArrowSortedDown />
                     </span>
-                  </Link>
+                  </Link> 
+                  <Item1 />
                 </li>
-                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full  ">
+
+                
+                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full cursor-pointer  ">
                   <Link
                     href="/"
                     className={` rounded-full  cursor-pointer   ${
@@ -55,7 +59,7 @@ const MegaNav = () => {
                     </span>
                   </Link>
                 </li>
-                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full  ">
+                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full cursor-pointer  ">
                   <Link
                     href="/"
                     className={` rounded-full  cursor-pointer   ${
@@ -67,7 +71,7 @@ const MegaNav = () => {
                     </span>
                   </Link>
                 </li>
-                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full  ">
+                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full cursor-pointer  ">
                   <Link
                     href="/"
                     className={` rounded-full  cursor-pointer   ${
@@ -79,7 +83,7 @@ const MegaNav = () => {
                     </span>
                   </Link>
                 </li>
-                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full  ">
+                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full cursor-pointer  ">
                   <Link
                     href="/"
                     className={` rounded-full  cursor-pointer   ${
@@ -92,7 +96,7 @@ const MegaNav = () => {
                     </span>
                   </Link>
                 </li>
-                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full  ">
+                <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full cursor-pointer  ">
                   <Link
                     href="/contact"
                     className={` rounded-full  cursor-pointer   ${

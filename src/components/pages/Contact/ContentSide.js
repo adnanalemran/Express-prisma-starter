@@ -7,7 +7,7 @@ import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
 const ContentSide = () => {
   return (
     <div>
-      <div className="text-2xl">Let’s work together</div>
+      <div className="text-xl text-slate-600">Let’s work together</div>
       <SecTitle
         title="Contact our Support and Sales team"
         subtitle="Helping to unfold next-level performance through a data-driven, digital native, engineering-inspired approach. Come and chat with us, we're all ears."
@@ -40,10 +40,7 @@ const ContentSide = () => {
                 <IoLocationOutline className="text-4xl text-primary " />
                 <div>
                   <p className="text-sm"> Location :</p>
-                  <p className="text-base">
-                    {" "}
-                    3 Dhakeswari Road, Lalbagh, Dhaka
-                  </p>
+                  <p className="text-base">3 Dhakeswari Road, Lalbagh, Dhaka</p>
                 </div>
               </div>
             </div>

@@ -16,7 +16,9 @@ const ProductView = () => {
             subtitle={len?.productSec?.subtitle}
           />
         </div>
-        <div className="pt-10 "><CustomSlider /></div>
+        <div className="pt-10 ">
+          <CustomSlider />
+        </div>
       </div>
     </div>
   );

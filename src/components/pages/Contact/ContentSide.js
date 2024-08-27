@@ -8,10 +8,7 @@ const ContentSide = () => {
   return (
     <div>
       <div className="text-xl text-slate-600">Let’s work together</div>
-      <SecTitle
-        title="Contact our Support and Sales team"
- 
-      />
+      <SecTitle title="Contact our Support and Sales team" />
 
       <div className="flex gap-4">
         <div className="w-full">

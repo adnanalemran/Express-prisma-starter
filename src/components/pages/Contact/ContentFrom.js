@@ -44,8 +44,7 @@ const ContentFrom = () => {
               Message :
             </label>
             <textarea
-              rows="5"
-             
+              rows="3"
               id="message"
               name="message"
               className="w-full bg-white rounded border-none border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"

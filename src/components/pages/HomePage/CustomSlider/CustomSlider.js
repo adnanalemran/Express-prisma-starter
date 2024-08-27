@@ -54,7 +54,7 @@ const CustomSlider = () => {
       );
     };
 
-    const interval = setInterval(() => moveSlider("next"), 10000);
+    const interval = setInterval(() => moveSlider("next"), 999999);
 
     nextBtn.onclick = () => moveSlider("next");
     prevBtn.onclick = () => moveSlider("prev");
@@ -113,11 +113,7 @@ const CustomSlider = () => {
             <div className="title text-6xl flex w-full justify-between   ">
               <span>{len?.productSec?.Product3?.name}</span>{" "}
               <div className="     ">
-                <img
-                  src={swLogo.src}
-                  alt="  logo"
-                  className=" object-fill h-48 w-96"
-                />
+                <img src={swLogo.src} alt=" logo" className="   " />
               </div>
             </div>
 

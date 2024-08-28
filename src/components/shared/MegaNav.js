@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { LanNavBar } from "@/app/language/Lan-NavBar";
 import useLanguage from "@/hook/useLanguage";
 import Item1 from "./MegaNevItem/Item1";
+import ServicesNav from "./MegaNevItem/ServicesNav";
 
 const MegaNav = () => {
   const lan = useLanguage(LanNavBar);
@@ -42,7 +43,7 @@ const MegaNav = () => {
                       <p> {lan?.Services} </p> <TiArrowSortedDown />
                     </span>
                   </Link>
-                  <Item1 />
+                  <ServicesNav />
                 </li>
 
                 <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full cursor-pointer  ">

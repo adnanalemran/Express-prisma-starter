@@ -21,7 +21,7 @@ const page = () => {
             innovation, and we are committed to helping our clients succeed in
             the digital age.
           </p>
-          <div className="flex justify-between lg:mt-54 py-10 lg:py-0">
+          <div className="flex lg:flex-row flex-col justify-between lg:mt-54 py-10 lg:py-0">
             <div className="flex flex-col lg:flex-row items-center lg:gap-4 gap-1 ">
               <div className="lg:text-3xl bg-primary p-3 rounded-full text-white">
                 <MdWorkspacesOutline />
@@ -94,7 +94,7 @@ const page = () => {
         Meet the talented individuals who make up our team
       </p>
 
-      <div className="pt-4 pb-16 grid lg:grid-cols-4  grid-cols-2 lg:gap-4 gap-2">
+      <div className="pt-4 pb-16 grid lg:grid-cols-4  grid-cols-1 lg:gap-4 gap-2">
         <Member name="John Doe" designation="CEO" />
         <Member name="John Doe" designation="CEO" />
         <Member name="John Doe" designation="CEO" />

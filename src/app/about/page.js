@@ -87,7 +87,12 @@ const page = () => {
         </div>
       </div>
 
-      <div className="pt-16 pb-32 grid grid-cols-4 gap-4">
+      <h2 className="text-3xl text-center font-bold">Our Team</h2>
+      <p className="text-center">
+        Meet the talented individuals who make up our team
+      </p>
+
+      <div className="pt-4 pb-32 grid grid-cols-4 gap-4">
         <Member name="John Doe" designation="CEO" />
         <Member name="John Doe" designation="CEO" />
         <Member name="John Doe" designation="CEO" />

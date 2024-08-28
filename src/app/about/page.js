@@ -21,29 +21,29 @@ const page = () => {
             innovation, and we are committed to helping our clients succeed in
             the digital age.
           </p>
-          <div className="flex justify-between lg:mt-54">
-            <div className="flex items-center gap-4 ">
-              <div className="text-3xl bg-primary p-3 rounded-full text-white">
+          <div className="flex justify-between lg:mt-54 py-10 lg:py-0">
+            <div className="flex flex-col lg:flex-row items-center lg:gap-4 gap-1 ">
+              <div className="lg:text-3xl bg-primary p-3 rounded-full text-white">
                 <MdWorkspacesOutline />
               </div>
-              <div>
-                Total Operations: <div className="font-bold">10k+</div>
+              <div className="whitespace-nowrap">
+                Total Operations: <span className="font-bold">10k+</span>
               </div>
             </div>
-            <div className="flex items-center gap-4 ">
-              <div className="text-3xl bg-primary p-3 rounded-full text-white">
+            <div className="flex flex-col lg:flex-row items-center lg:gap-4 gap-1 ">
+              <div className="lg:text-3xl bg-primary p-3 rounded-full text-white">
                 <PiUserSwitchFill />
               </div>
-              <div>
-                Total Clients: <div className="font-bold"> 300+ </div>
+              <div className="whitespace-nowrap">
+                Total Clients: <span className="font-bold"> 300+ </span>
               </div>
-            </div>{" "}
-            <div className="flex items-center gap-4 ">
-              <div className="text-3xl bg-primary p-3 rounded-full text-white">
+            </div>
+            <div className="flex flex-col lg:flex-row items-center lg:gap-4 gap-1 ">
+              <div className="lg:text-3xl bg-primary p-3 rounded-full text-white">
                 <PiUserSwitchFill />
               </div>
-              <div>
-                Total Clients: <div className="font-bold"> 300+ </div>
+              <div className="whitespace-nowrap">
+                Total Clients: <span className="font-bold"> 300+ </span>
               </div>
             </div>
           </div>
@@ -60,11 +60,13 @@ const page = () => {
             <img
               src={jabedLargeImage.src}
               alt="Jabed"
-              className=" rounded-xl w-100"
+              className=" rounded-xl lg:w-100 w-32"
             />
           </div>
           <div className="w-full lg:w-4/6 rounded-xl ">
-            <h2 className="text-end text-3xl font-bold">Voice of the CEO</h2>{" "}
+            <h2 className="text-end lg:text-3xl text-2xl font-bold">
+              Voice of the CEO
+            </h2>{" "}
             <p className="  text-justify py-8 ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
               semLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -92,7 +94,7 @@ const page = () => {
         Meet the talented individuals who make up our team
       </p>
 
-      <div className="pt-4 pb-16 grid grid-cols-4 gap-4">
+      <div className="pt-4 pb-16 grid lg:grid-cols-4  grid-cols-2 gap-4">
         <Member name="John Doe" designation="CEO" />
         <Member name="John Doe" designation="CEO" />
         <Member name="John Doe" designation="CEO" />

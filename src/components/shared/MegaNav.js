@@ -35,7 +35,7 @@ const MegaNav = () => {
                   <Link
                     href="/"
                     className={` rounded-full  cursor-pointer   ${
-                      pathname === "/about" ? "active" : " "
+                      pathname === "/a" ? "active" : " "
                     }`}
                   >
                     <span className="flex gap-3 items-center ">
@@ -85,7 +85,7 @@ const MegaNav = () => {
                   <Link
                     href="/about"
                     className={` rounded-full  cursor-pointer   ${
-                      pathname === "/s" ? "active" : " "
+                      pathname === "/about" ? "active" : " "
                     }`}
                   >
                     <span className="flex gap-3 items-center ">

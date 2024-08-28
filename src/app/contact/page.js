@@ -16,11 +16,13 @@ const page = () => {
       <div>
         <iframe
           className="w-full h-[500px] mt-16 rounded-2xl"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.7572450240696!2d90.38719027432504!3d23.720361489930752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b94c5defd7db%3A0xfbe3840598158ab6!2sZaimah%20Technologies%20Limited!5e0!3m2!1sen!2sbd!4v1724743454019!5m2!1sen!2sbd"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3875.5837523635823!2d100.5428408!3d13.7436325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f52d9bb06e3%3A0xa8fddc991e17095b!2sZAIMAH%20TECHNOLOGIES%20(THAILAND)%20CO.%2C%20LTD!5e0!3m2!1sen!2sbd!4v1724823238433!5m2!1sen!2sbd"
   
           loading="lazy"
  
         ></iframe>
+
+ 
       </div>
     </div>
   );

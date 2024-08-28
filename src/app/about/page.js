@@ -4,6 +4,7 @@ import { PiUserSwitchFill } from "react-icons/pi";
 import image from "@/utils/images/large/about.webp";
 import { MdWorkspacesOutline } from "react-icons/md";
 import Member from "@/components/pages/About/Member";
+import jabedLargeImage from "@/utils/images/person/jabedfull.jpeg";
 const page = () => {
   return (
     <div className="min-h-100 container mx-auto pt-16 ">
@@ -53,6 +54,39 @@ const page = () => {
         </div>
       </div>
 
+      <div className="py-24">
+        <div className="flex justify-between lg:gap-8 flex-col lg:flex-row ">
+          <div className="w-full lg:w-2/6 ">
+            <img
+              src={jabedLargeImage.src}
+              alt="Jabed"
+              className=" rounded-xl w-100"
+            />
+          </div>
+          <div className="w-full lg:w-4/6 rounded-xl ">
+            <h2 className="text-end text-3xl font-bold">Voice of the CEO</h2>{" "}
+            <p className="  text-justify py-8 ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+              semLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              eget semLorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed eget semLorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed eget semLorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed eget semLorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Sed eget semLorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Sed eget semLorem ipsum dolor
+              sit amet, consectetur adipiscing elit. Sed eget semLorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Sed eget semLorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+              semLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              eget semLorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed eget sem
+            </p>
+            <p className="text-end"> Jabed Akhter</p>
+            <p className="text-end"> CEO of ZTL</p>
+          </div>
+        </div>
+      </div>
+
       <div className="pt-16 pb-32 grid grid-cols-4 gap-4">
         <Member name="John Doe" designation="CEO" />
         <Member name="John Doe" designation="CEO" />
@@ -62,7 +96,10 @@ const page = () => {
 
       <div>
         <p className="text-justify">
-        Our team at  Zaimah Technologies Limited   will focus on product development, product life-cycle, and software development to create custom-made mobile and web apps. We will also provide software QA testing, cloud solutions, and other digital transformation services.
+          Our team at Zaimah Technologies Limited will focus on product
+          development, product life-cycle, and software development to create
+          custom-made mobile and web apps. We will also provide software QA
+          testing, cloud solutions, and other digital transformation services.
         </p>
       </div>
     </div>

@@ -30,14 +30,15 @@ const ContentSide = () => {
                 <AiOutlineMail className="text-3xl text-primary " />
                 <div>
                   <p className="text-sm"> Email us: </p>
-                  <p className=""> info@zaimahtech.com</p>
+                  <p className=""> info@zaimah.co.th</p>
                 </div>
               </div>{" "}
               <div className="flex flex-row gap-4 items-center">
                 <IoLocationOutline className="text-4xl text-primary " />
                 <div>
                   <p className="text-sm"> Location :</p>
-                  <p className="text-base">3 Dhakeswari Road, Lalbagh, Dhaka</p>
+                  <p className="text-base">Level 11, 540 Mercury Tower, Ploenchit Road, Lumpini,
+                  Pathumwan, Bangkok 10330, Thailand</p>
                 </div>
               </div>
             </div>

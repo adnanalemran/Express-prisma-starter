@@ -7,7 +7,7 @@ import Member from "@/components/pages/About/Member";
 import jabedLargeImage from "@/utils/images/person/jabedfull.jpeg";
 const page = () => {
   return (
-    <div className="min-h-100 container mx-auto pt-16 ">
+    <div className="min-h-100 container mx-auto lg:pt-16 pt-6 p-4 ">
       <SecTitle title="ABOUT US   " subtitle="" />
 
       <div className="flex flex-col lg:flex-row lg:gap-16">

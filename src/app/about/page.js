@@ -108,67 +108,7 @@ const page = () => {
         <Member name="John Doe" designation="CEO" />
       </div>
 
-      <div>
-        <div className="  container mx-auto ">
-          <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">
-            How We Work
-          </h2>
-          <div className="space-y-4">
-            <section>
-              <h3 className="text-sm font-bold text-gray-700">
-                Discovery & Analysis
-              </h3>
-              <p className="mt-1 lg:text-lg text-sm text-slate-600 ">
-                We start by understanding your business goals, defining the
-                project scope, budget, and timeline, and identifying potential
-                challenges.
-              </p>
-            </section>
-
-            <section>
-              <h3 className="text-sm font-bold text-gray-700">
-                Design & Development
-              </h3>
-              <p className="mt-1 lg:text-lg text-sm text-slate-600 ">
-                Using agile methodology, we design and develop the solution in
-                stages, delivering prototypes to ensure alignment with your
-                needs.
-              </p>
-            </section>
-
-            <section>
-              <h3 className="text-sm font-bold text-gray-700">
-                Testing & Quality Assurance
-              </h3>
-              <p className="mt-1 lg:text-lg text-sm text-slate-600 ">
-                We rigorously test throughout the process, focusing on
-                functionality, user experience, and accessibility, making
-                adjustments based on feedback.
-              </p>
-            </section>
-
-            <section>
-              <h3 className="text-sm font-bold text-gray-700">
-                Deployment & Support
-              </h3>
-              <p className="mt-1 lg:text-lg text-sm text-slate-600 ">
-                After deployment, we provide ongoing support, maintenance,
-                training, and documentation to ensure smooth operation.
-              </p>
-            </section>
-
-            <section>
-              <h3 className="text-sm font-bold text-gray-700">
-                Communication & Transparency
-              </h3>
-              <p className="mt-1 lg:text-lg text-sm text-slate-600 ">
-                We maintain clear communication and transparency, keeping you
-                informed and involved at every stage.
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 };

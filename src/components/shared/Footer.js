@@ -19,10 +19,6 @@ const Footer = () => {
                 Leading tech industry force, driving innovation and delivering
                 cutting-edge solutions
               </p>
-              <div className="  flex  items-center ">
-                <div className=" font-semibold ">Approved By : </div>{" "}
-                <Image src={logoImage2} width={120} alt="logo" />
-              </div>
             </div>
           </div>
 
@@ -100,16 +96,10 @@ const Footer = () => {
                 </a>
               </div>
 
-              <div>
-                <h3 className="text-gray-700 uppercase dark:text-white">
-                  Contact
-                </h3>
-                <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                  +1 526 654 8965
-                </span>
-                <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                  example@email.com
-                </span>
+              <div className=" flex items-end">
+                <div className="  flex  items-end ">
+                  <Image src={logoImage2} width={120} alt="logo" />
+                </div>
               </div>
             </div>
           </div>

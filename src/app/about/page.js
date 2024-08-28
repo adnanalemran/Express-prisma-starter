@@ -8,7 +8,7 @@ import jabedLargeImage from "@/utils/images/person/jabedfull.jpeg";
 const page = () => {
   return (
     <div className="min-h-100 container mx-auto lg:pt-16 pt-6 p-4 ">
-      <SecTitle title="ABOUT US   " subtitle="" />
+      <SecTitle title="ABOUT US " subtitle="" />
 
       <div className="flex flex-col lg:flex-row lg:gap-16">
         <div className="w-full lg:w-1/2">
@@ -21,29 +21,36 @@ const page = () => {
             innovation, and we are committed to helping our clients succeed in
             the digital age.
           </p>
-          <div className="flex lg:flex-row flex-col justify-between lg:mt-54 py-10 lg:py-0">
-            <div className="flex flex-col lg:flex-row items-center lg:gap-4 gap-1 ">
-              <div className="lg:text-3xl bg-primary p-3 rounded-full text-white">
+          <div className="grid  grid-cols-2 gap-4 justify-between lg:mt-30 py-10 lg:py-0">
+            <div className="flex  items-center lg:gap-4 gap-1 ">
+              <div className=" text-3xl bg-primary p-3 rounded-full text-white">
                 <MdWorkspacesOutline />
               </div>
               <div className="whitespace-nowrap">
-                Total Operations: <span className="font-bold">10k+</span>
+                Total Operations: <div className="font-bold">10k+</div>
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row items-center lg:gap-4 gap-1 ">
-              <div className="lg:text-3xl bg-primary p-3 rounded-full text-white">
-                <PiUserSwitchFill />
+            <div className="flex  items-center lg:gap-4 gap-1 ">
+              <div className=" text-3xl bg-primary p-3 rounded-full text-white">
+                <MdWorkspacesOutline />
               </div>
               <div className="whitespace-nowrap">
-                Total Clients: <span className="font-bold"> 300+ </span>
+                Total Operations: <div className="font-bold">10k+</div>
               </div>
-            </div>
-            <div className="flex flex-col lg:flex-row items-center lg:gap-4 gap-1 ">
-              <div className="lg:text-3xl bg-primary p-3 rounded-full text-white">
-                <PiUserSwitchFill />
+            </div>{" "}
+            <div className="flex  items-center lg:gap-4 gap-1 ">
+              <div className=" text-3xl bg-primary p-3 rounded-full text-white">
+                <MdWorkspacesOutline />
               </div>
               <div className="whitespace-nowrap">
-                Total Clients: <span className="font-bold"> 300+ </span>
+                Total Operations: <div className="font-bold">10k+</div>
+              </div>
+            </div>  <div className="flex  items-center lg:gap-4 gap-1 ">
+              <div className=" text-3xl bg-primary p-3 rounded-full text-white">
+                <MdWorkspacesOutline />
+              </div>
+              <div className="whitespace-nowrap">
+                Total Operations: <div className="font-bold">10k+</div>
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ const Member = (props) => {
   const { name, designation } = props;
   return (
     <>
-      <div className="max-w-sm mx-auto mt-8 bg-white shadow-xl rounded-lg text-gray-900">
+      <div className="max-w-sm mx-auto lg:mt-8 bg-white shadow-xl rounded-lg text-gray-900">
         <div className="rounded-t-lg h-32 overflow-hidden">
           <img
             className="object-cover object-top w-full"

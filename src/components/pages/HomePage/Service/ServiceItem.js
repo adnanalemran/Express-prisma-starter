@@ -15,15 +15,15 @@ const ServiceItem = () => {
                 <h1 className="lg:text-4xl text-2xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
                   Cloud Computing Solutions
                 </h1>
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Scalable cloud architecture
                 </p>
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Data security and backup
                 </p>
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Cost-effective cloud services
                 </p>
@@ -40,31 +40,31 @@ const ServiceItem = () => {
                 <h1 className="lg:text-4xl text-2xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
                   SaaS Product Development
                 </h1>
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Cost-effective cloud services
                 </p>
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   User Management and Authentication
                 </p>
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Billing and Subscription Management
                 </p>
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   API Integration and Management
                 </p>{" "}
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Data Analytics and Reporting
                 </p>{" "}
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Customer Support and Helpdesk Integration
                 </p>{" "}
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Security and Compliance Management
                 </p>
@@ -78,37 +78,37 @@ const ServiceItem = () => {
                 <h1 className="lg:text-4xl text-2xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
                   IT Auditing & Consulting
                 </h1>
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   IT Infrastructure Audits
                 </p>
 
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Cybersecurity Audits Compliance Audits
                 </p>
 
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   IT Risk Management Consulting
                 </p>
 
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Technology Strategy Consulting
                 </p>
 
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Cloud Readiness and Migration Consulting
                 </p>
 
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   IT Governance Consulting
                 </p>
 
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Business Continuity Planning
                 </p>
@@ -122,11 +122,11 @@ const ServiceItem = () => {
                 <h1 className="lg:text-4xl text-2xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
                   E-Commerce Website Development
                 </h1>
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Mobile-friendly design
                 </p>
-                  <p className="flex items-center gap-2 text-gray-600 mb-2 text-sm">
+                <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   SEO optimization
                 </p>

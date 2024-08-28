@@ -71,7 +71,7 @@ const CustomSlider = () => {
             <div className="title text-6xl flex w-full justify-between   ">
               <span>{len?.productSec?.Product1?.name}</span>{" "}
               <div className="w-44 ">
-                <img src={hrLogo.src} alt="hr logo" className=" w-full" />
+                {/* <img src={hrLogo.src} alt="hr logo" className=" w-full" /> */}
               </div>
             </div>
 
@@ -91,9 +91,6 @@ const CustomSlider = () => {
           <div className="content w-full    ">
             <div className="title text-6xl flex w-full justify-between   ">
               <span>{len?.productSec?.Product2?.name}</span>{" "}
-              <div className="w-44 bg-white rounded-xl ">
-                <img src={ipLogo.src} alt="hr logo" className=" w-full" />
-              </div>
             </div>
 
             <div className="description max-w-100 py-10">
@@ -113,7 +110,7 @@ const CustomSlider = () => {
             <div className="title text-6xl flex w-full justify-between   ">
               <span>{len?.productSec?.Product3?.name}</span>{" "}
               <div className="     ">
-                <img src={swLogo.src} alt=" logo" className="   " />
+                {/* <img src={swLogo.src} alt=" logo" className="   " /> */}
               </div>
             </div>
 
@@ -132,13 +129,12 @@ const CustomSlider = () => {
           <img src={image4.src} alt="" />
           <div className="content w-full    ">
             <div className="title text-6xl flex w-full justify-between   ">
-              <span>{len?.productSec?.Product4?.name}</span>{" "}
-              <div className="    w-34  bg-white rounded-xl p-4 ">
-                <img src={apLogo.src} alt="  logo" className=" w-full" />
-              </div>
+              <span className="text-black">
+                {len?.productSec?.Product4?.name}
+              </span>{" "}
             </div>
 
-            <div className="description max-w-100 py-10">
+            <div className="description max-w-100 py-10 text-black">
               {len?.productSec?.Product4?.description}
             </div>
             <div className="button">

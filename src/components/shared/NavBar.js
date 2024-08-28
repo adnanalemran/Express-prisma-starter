@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import logoImage from "@/utils/images/logo/Asset 1@4x.png";
+import logoImage from "@/utils/images/logo/singleLogo.png";
 import { usePathname } from "next/navigation";
 import "./HeaderStyle.css";
 import Link from "next/link";
@@ -37,8 +37,20 @@ const Navbar = () => {
       <div className={`min-w-26 py-4 bg-white border-b-[1px] border-stick `}>
         <div className="container mx-auto flex items-center text-sm justify-between gap-10 lg:px-16 px-4">
           <div className="lg:text-2xl font-bold flex gap-2 items-center">
-            <Link href="/" className="r">
-              <Image src={logoImage} width={150} alt="logo" />
+            <Link href="/" className="flex justify-center items-center gap-2">
+              <Image src={logoImage} width={50} alt="logo" />
+
+              <div className="flex flex-col">
+                <p className="text-xl  ">
+                  ZAIMAH TECHNOLOGIES (THAILAND) CO., LTD
+                </p>
+                <p className="text-sm">
+               
+                 
+                    บริษัท ไซมา เทคโนโลยี (ประเทศไทย) จำกัด
+                  
+                </p>{" "}
+              </div>
             </Link>
           </div>
           <div>

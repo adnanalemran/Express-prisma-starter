@@ -79,8 +79,7 @@ const ServicesNav = () => {
                         </div>
                       </div>
                       <div className="text-xs  font-light   ">
-                        Tailored solutions for web, mobile, and enterprise
-                        systems.
+                      Extensive IT support and regular system upkeep for efficiency.
                       </div>
                     </Link>
                   </li>
@@ -88,12 +87,11 @@ const ServicesNav = () => {
                     <Link href="/Enterprise-Software">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">
-                          IT Consulting & Audits
+                        AI & Machine Learning Solutions
                         </div>
                       </div>
                       <div className="text-xs  font-light   ">
-                        Expert advice and detailed assessments for IT
-                        optimization and security.
+                      Integrating AI and ML to automate processes and enhance capabilities.
                       </div>
                     </Link>
                   </li>
@@ -101,11 +99,10 @@ const ServicesNav = () => {
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
                     <Link href="/about">
                       <div className="flex  gap-2  items-center py-1">
-                        <div className="text-sm font-bold">Cloud Solutions</div>
+                        <div className="text-sm font-bold">Digital Transformation & Automation</div>
                       </div>
                       <div className="text-xs  font-light  ">
-                        Seamless cloud migration and ongoing management for
-                        scalable, secure operations.
+                      Streamlining operations with digital strategies and process automation.
                       </div>
                     </Link>
                   </li>
@@ -113,12 +110,11 @@ const ServicesNav = () => {
                     <Link href="/about">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">
-                          Cybersecurity & Data Protection
+                        IoT Solutions
                         </div>
                       </div>
                       <div className="text-xs  font-light  ">
-                        Real-time threat management and robust data protection
-                        measures.
+                      Developing IoT systems for real-time data and smart infrastructure improvements.
                       </div>
                     </Link>
                   </li>

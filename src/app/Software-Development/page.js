@@ -2,7 +2,7 @@
 import UniversalPage from "@/components/common/UniversalPage";
 import React from "react";
 import image from "@/utils/pageSvg/undraw_messaging_7ho8.svg";
-import image2 from "@/utils/pageSvg/undraw_messaging_7ho8.svg";
+import image2 from "@/utils/pageSvg/undraw_web_devices_re_m8sc.svg";
 
 const Page = () => {
   const content = {

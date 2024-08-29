@@ -45,11 +45,8 @@ const Navbar = () => {
                   ZAIMAH TECHNOLOGIES (THAILAND) CO., LTD
                 </p>
                 <p className="text-sm">
-               
-                 
-                    บริษัท ไซมา เทคโนโลยี (ประเทศไทย) จำกัด
-                  
-                </p>{" "}
+                  บริษัท ไซมา เทคโนโลยี (ประเทศไทย) จำกัด
+                </p>
               </div>
             </Link>
           </div>

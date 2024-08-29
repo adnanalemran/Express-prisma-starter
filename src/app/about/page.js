@@ -37,7 +37,7 @@ const page = () => {
               <div className="whitespace-nowrap">
                 Total Operations: <div className="font-bold">10k+</div>
               </div>
-            </div>{" "}
+            </div>
             <div className="flex  items-center lg:gap-4 gap-1 ">
               <div className=" text-3xl bg-primary p-3 rounded-full text-white">
                 <MdWorkspacesOutline />
@@ -45,7 +45,8 @@ const page = () => {
               <div className="whitespace-nowrap">
                 Total Operations: <div className="font-bold">10k+</div>
               </div>
-            </div>  <div className="flex  items-center lg:gap-4 gap-1 ">
+            </div>{" "}
+            <div className="flex  items-center lg:gap-4 gap-1 ">
               <div className=" text-3xl bg-primary p-3 rounded-full text-white">
                 <MdWorkspacesOutline />
               </div>
@@ -73,7 +74,7 @@ const page = () => {
           <div className="w-full lg:w-4/6 rounded-xl ">
             <h2 className="text-end lg:text-3xl text-2xl font-bold">
               Voice of the CEO
-            </h2>{" "}
+            </h2>
             <p className="  text-justify py-8 ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
               semLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -107,8 +108,6 @@ const page = () => {
         <Member name="John Doe" designation="CEO" />
         <Member name="John Doe" designation="CEO" />
       </div>
-
-      
     </div>
   );
 };

@@ -28,11 +28,9 @@ const Member = (props) => {
         </div>
         <ul className="py-2  gap-3 text-gray-700 flex flex-col items-center justify-between">
           <li className="flex gap-2 items-center">
-            {" "}
             <IoCall /> <span className="text-sm"> 019-12345678 </span>
           </li>
           <li className="flex  gap-2 items-center">
-            {" "}
             <IoMail /> <span className="text-sm"> example@gmail.com </span>
           </li>
         </ul>

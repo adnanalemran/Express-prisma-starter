@@ -20,7 +20,7 @@ const HeroSection = () => {
             <div className="  gap-3  items-center  ">
               <h1 className="lg:text-5xl text-3xl font-bold mb-8 mt-16">
                 {lan?.ZTLThai}
-              </h1>{" "}
+              </h1>
             </div>
 
             <div className="lg:text-xl text-xl py-8">{lan?.heroParagraph}</div>

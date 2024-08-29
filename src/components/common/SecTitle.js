@@ -9,7 +9,7 @@ const SecTitle = (props) => {
       </h2>
       <h3 className="lg:text-xl text-sm text-center lg:text-left">
         {subtitle}
-      </h3>{" "}
+      </h3>
     </div>
   );
 };

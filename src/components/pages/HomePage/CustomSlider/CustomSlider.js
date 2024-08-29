@@ -69,7 +69,7 @@ const CustomSlider = () => {
           <img src={image1.src} alt="" />
           <div className="content w-full    ">
             <div className="title text-6xl flex w-full justify-between   ">
-              <span>{len?.productSec?.Product1?.name}</span>{" "}
+              <span>{len?.productSec?.Product1?.name}</span>
               <div className="w-44 ">
                 {/* <img src={hrLogo.src} alt="hr logo" className=" w-full" /> */}
               </div>
@@ -85,12 +85,12 @@ const CustomSlider = () => {
               />
             </div>
           </div>
-        </div>{" "}
+        </div>
         <div className="item">
           <img src={image2.src} alt="" />
           <div className="content w-full    ">
             <div className="title text-6xl flex w-full justify-between   ">
-              <span>{len?.productSec?.Product2?.name}</span>{" "}
+              <span>{len?.productSec?.Product2?.name}</span>
             </div>
 
             <div className="description max-w-100 py-10">
@@ -108,7 +108,7 @@ const CustomSlider = () => {
           <img src={image3.src} alt="" />
           <div className="content w-full    ">
             <div className="title text-6xl flex w-full justify-between   ">
-              <span>{len?.productSec?.Product3?.name}</span>{" "}
+              <span>{len?.productSec?.Product3?.name}</span>
               <div className="     ">
                 {/* <img src={swLogo.src} alt=" logo" className="   " /> */}
               </div>
@@ -131,7 +131,7 @@ const CustomSlider = () => {
             <div className="title text-6xl flex w-full justify-between   ">
               <span className="text-black">
                 {len?.productSec?.Product4?.name}
-              </span>{" "}
+              </span>
             </div>
 
             <div className="description max-w-100 py-10 text-black">
@@ -150,28 +150,24 @@ const CustomSlider = () => {
         <div className="item">
           <img src={image4.src} alt="" />
           <div className="-mt-8 text-white px-3">
-            {" "}
             {len?.productSec?.Product4?.name}
           </div>
         </div>
         <div className="item">
           <img src={image1.src} alt="" />
           <div className="-mt-8 text-white px-3">
-            {" "}
             {len?.productSec?.Product1?.name}
           </div>
         </div>
         <div className="item">
           <img src={image2.src} alt="" />
           <div className="-mt-8 text-white px-3">
-            {" "}
             {len?.productSec?.Product2?.name}
           </div>
         </div>
         <div className="item">
           <img src={image3.src} alt="" />
           <div className="-mt-8 text-white px-3">
-            {" "}
             {len?.productSec?.Product3?.name}
           </div>
         </div>

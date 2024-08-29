@@ -33,10 +33,10 @@ const BangladeshTab = () => {
               </p>
               <p>
                 <strong>{len?.tabsSec?.Bangladesh?.Clients}</strong>
-              </p>{" "}
+              </p>
               <p>
                 <strong>{len?.tabsSec?.Bangladesh?.TeamMembers}</strong>
-              </p>{" "}
+              </p>
               <p>
                 <strong>{len?.tabsSec?.Bangladesh?.Projects}</strong>
               </p>

@@ -17,11 +17,10 @@ const TopServiceCard = (props) => {
         </figure>
         <div className="card-body">
           <h2 className="card-title flex justify-between">
-            {" "}
-            {LargeText}{" "}
+            {LargeText}
             <div className="flex justify-start items-center gap-2 text-sm">
               <FaStar /> <p>6.2</p>
-            </div>{" "}
+            </div>
           </h2>
           <p>{Subtext}</p>
           <div className="card-actions   flex gap-4 justify-between">

@@ -101,7 +101,7 @@ const NavMobile = () => {
                   <HiOutlineHomeModern className="mr-2 text-brandColor text-xl" />
                   Property
                 </Link>
-              </li>{" "}
+              </li>
               <li onClick={closeModal} className="p-4 bg-[#30b3ff0e] rounded">
                 <Link
                   href="/come-in-soon"
@@ -110,7 +110,7 @@ const NavMobile = () => {
                   <IoPricetagsOutline className="mr-2 text-brandColor text-xl" />
                   Rentals
                 </Link>
-              </li>{" "}
+              </li>
               <li
                 onClick={closeModal}
                 className="p-4 bg-[#30b3ff0e] rounded col-span-2"

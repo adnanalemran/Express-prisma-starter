@@ -25,20 +25,22 @@ const ContentSide = () => {
                   <p className="text-sm"> Phone No : </p>
                   <p className=""> +8809617209581</p>
                 </div>
-              </div>{" "}
+              </div>
               <div className="flex flex-row gap-4 items-center">
                 <AiOutlineMail className="text-3xl text-primary " />
                 <div>
                   <p className="text-sm"> Email us: </p>
                   <p className=""> info@zaimah.co.th</p>
                 </div>
-              </div>{" "}
+              </div>
               <div className="flex flex-row gap-4 items-center">
                 <IoLocationOutline className="text-4xl text-primary " />
                 <div>
                   <p className="text-sm"> Location :</p>
-                  <p className="text-base">Level 11, 540 Mercury Tower, Ploenchit Road, Lumpini,
-                  Pathumwan, Bangkok 10330, Thailand</p>
+                  <p className="text-base">
+                    Level 11, 540 Mercury Tower, Ploenchit Road, Lumpini,
+                    Pathumwan, Bangkok 10330, Thailand
+                  </p>
                 </div>
               </div>
             </div>

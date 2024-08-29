@@ -17,8 +17,8 @@ import SecTitle from "@/components/common/SecTitle";
 
 const TrustedSection = () => {
   return (
-    <div className="  mx-auto py-8 pb-36  lg:mx-8 ">
-      <SecTitle title="Trusted by over 400+ clients Zaimah Tech.  worldwide" />
+    <div className="  mx-auto py-8    lg:mx-8 ">
+      <SecTitle title="Trusted by over 400+ clients Zaimah Tech (THAILAND) CO., LTD.  worldwide" />
       <div
         className="grid 
       grid-cols-2 md:grid-cols-3
@@ -60,7 +60,6 @@ const TrustedSection = () => {
         <div className="flex justify-center items-center">
           <Image width={80} height={80} src={image1} alt="client" />
         </div>
-        
       </div>
     </div>
   );

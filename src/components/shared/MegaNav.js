@@ -102,7 +102,7 @@ const MegaNav = () => {
                     }`}
                   >
                     <span className="flex gap-3 items-center ">
-                      <p>{lan?.Contacts} </p>{" "}
+                      <p>{lan?.Contacts} </p>
                     </span>
                   </Link>
                 </li>

@@ -55,15 +55,15 @@ const ServiceItem = () => {
                 <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   API Integration and Management
-                </p>{" "}
+                </p>
                 <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Data Analytics and Reporting
-                </p>{" "}
+                </p>
                 <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Customer Support and Helpdesk Integration
-                </p>{" "}
+                </p>
                 <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />
                   Security and Compliance Management

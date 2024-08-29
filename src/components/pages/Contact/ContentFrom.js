@@ -21,7 +21,7 @@ const ContentFrom = () => {
               name="full-name"
               className="w-full bg-white rounded border-none border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
             />
-          </div>{" "}
+          </div>
           <div className="  mb-4">
             <label
               htmlFor="email"
@@ -35,7 +35,7 @@ const ContentFrom = () => {
               name="email"
               className="w-full bg-white rounded border-none border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
             />
-          </div>{" "}
+          </div>
           <div className="  mb-4">
             <label
               htmlFor="message"
@@ -49,7 +49,7 @@ const ContentFrom = () => {
               name="message"
               className="w-full bg-white rounded border-none border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
             />
-          </div>{" "}
+          </div>
           <div className="flex justify-center">
             <button className="bg-primary hover:bg-orange-700 text-white px-8 py-2 rounded-lg w-full">
               Submit

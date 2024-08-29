@@ -30,7 +30,7 @@ const ServicesNav = () => {
                     </Link>
                   </li>
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
-                    <Link href="/about">
+                    <Link href="/Enterprise-Software">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">
                           Enterprise Software

@@ -1,15 +1,16 @@
 import UniversalPage from "@/components/common/UniversalPage";
 import React from "react";
 import image from "@/utils/pageSvg/undraw_messaging_7ho8.svg";
-import image2 from "@/utils/pageSvg/undraw_messaging_7ho8.svg";
+import image2 from "@/utils/pageSvg/undraw_static_website_re_x70h.svg";
 
 const Page = () => {
+     
     const content = {
         title: "Custom Software Solutions",
         description:
           "At Zaimah Technologies, we specialize in developing bespoke software solutions that align with your business objectives. Our custom software is designed to enhance efficiency, drive innovation, and provide a competitive edge.",
-        imageTop: image,
-        imageCenter: image2.src,
+        imageTop: image?.src,
+        imageCenter: image2?.src,
         altTextTop: "Custom Software Development Illustration",
         altTextCenter: "Bespoke Software Solutions",
         title2: "Why Choose Our Custom Software Solutions?",

@@ -5,9 +5,9 @@ const UniversalPage = ({
   title,
   description,
   imageTop,
-  features,
-  tilte2,
   imageCenter,
+  features,
+  title2,
 }) => {
   return (
     <div className="lg:pt-1 ">
@@ -27,7 +27,7 @@ const UniversalPage = ({
               </span>
             </Link>
             <Link
-              href="/service"
+              href="/contact"
               className="font-light rounded px-3 py-2 bg-base-300  hover:bg-gradient-to-r hover:from-[#d4f4ff] hover:to-[#d7f0ff]   hover:ring-2 hover:ring-offset-2 hover:ring-[#d6f5ff] "
             >
               <span className="capitalize text-sm font-semibold">see more</span>
@@ -43,14 +43,14 @@ const UniversalPage = ({
         <div className="container mx-auto px-4">
           <div className="py-8 lg:pt-20">
             <h2 className="text-4xl font-bold text-center lg:px-12">
-              {tilte2}
+              {title2}
             </h2>
 
             <div className="flex flex-col lg:flex-row gap-8 py-16 items-center">
               <div className="lg:w-5/12 flex  justify-center items-center">
                 <img
                   className="rounded-xl lg:p-8 px-32 "
-                  src={imageCenter}
+                  src={imageCenter?.src}
                   alt=""
                 />
               </div>

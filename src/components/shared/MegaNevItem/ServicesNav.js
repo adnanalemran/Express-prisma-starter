@@ -16,7 +16,7 @@ const ServicesNav = () => {
                     Software Development
                   </p>
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
-                    <Link href="/about">
+                    <Link href="/Software-Development">
                       <div className="flex gap-2    items-center py-1">
                         <div className="text-sm font-bold">
                           Custom Solutions

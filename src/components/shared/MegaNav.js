@@ -7,7 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LanNavBar } from "@/app/language/Lan-NavBar";
 import useLanguage from "@/hook/useLanguage";
-import Item1 from "./MegaNevItem/Item1";
+ 
 import ServicesNav from "./MegaNevItem/ServicesNav";
 
 const MegaNav = () => {

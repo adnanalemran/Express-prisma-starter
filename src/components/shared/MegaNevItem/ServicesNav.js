@@ -8,10 +8,7 @@ const ServicesNav = () => {
         <div className="relative top-3 p-6 bg-tertiary rounded-xl shadow w-full">
           <div className="w-10 h-10   bg-tertiary transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform group-hover:translate-x-[8rem] duration-500 ease-in-out rounded-sm  "></div>
 
-          <div
-            className="relative z-10 w-203
-            "
-          >
+          <div className="relative z-10 w-203  ">
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <ul className="mt-1 text-[15px]">

@@ -32,7 +32,7 @@ const BangladeshTab = () => {
           </h2>
           <p className="py-6">{len?.tabsSec?.Bangladesh?.subtitle}</p>
           <div className="flex flex-col md:flex-row md:justify-between min-h-[200px]">
-            <div className="grid grid-cols-4 mt-10  w-full">
+            <div className="grid lg:grid-cols-4 grid-cols-2 mt-10  w-full bg-white rounded-xl p-2">
               <div className="flex flex-col items-center gap-2 ">
                 <div className="p-4   bg-primary text-white rounded-full  shadow-2xl ">
                   <GoProjectRoadmap

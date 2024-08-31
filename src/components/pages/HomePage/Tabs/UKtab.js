@@ -20,14 +20,13 @@ const UKtab = () => {
             ZTL - Partner Office in <span className="font-bold">UK</span>
           </h2>
           <p className="py-6">
-            Our partner office in UK plays a crucial role in extending our
-            reach and capabilities across Southeast Asia. By collaborating with
-            local experts, we ensure that our clients receive tailored solutions
-            that address their specific needs while leveraging our global
-            expertise.
+            Our partner office in UK plays a crucial role in extending our reach
+            and capabilities across Southeast Asia. By collaborating with local
+            experts, we ensure that our clients receive tailored solutions that
+            address their specific needs while leveraging our global expertise.
           </p>
           <div className="flex flex-col md:flex-row md:justify-between min-h-[200px]">
-            <div className="grid grid-cols-4 mt-10  w-full">
+            <div className="grid lg:grid-cols-4 grid-cols-2 mt-10  w-full bg-white rounded-xl p-2">
               <div className="flex flex-col items-center gap-2 ">
                 <div className="p-4   bg-primary text-white rounded-full  shadow-2xl ">
                   <GoProjectRoadmap
@@ -77,8 +76,5 @@ const UKtab = () => {
     </div>
   );
 };
-
- 
-
 
 export default UKtab;

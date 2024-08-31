@@ -97,7 +97,7 @@ const ServicesNav = () => {
                   </li>
 
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
-                    <Link href="/about">
+                    <Link href="/Service/Digital-Transformation-&-Automation">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">Digital Transformation & Automation</div>
                       </div>

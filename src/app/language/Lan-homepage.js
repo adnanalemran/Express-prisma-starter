@@ -51,7 +51,7 @@ const english = {
         "At ZTL, we pride ourselves on delivering cutting-edge technology solutions tailored to meet our clients' needs. Our commitment to innovation and excellence has earned us a reputation as a trusted partner in the IT industry. We specialize in a wide range of services, including software development, IT consulting, and system integration.",
 
       Operations: "Total Operations: 10k+",
-      Clients: "Total Clients: 300+",
+      Clients: "Total Clients",
       TeamMembers: "Team Members: 15+",
       Projects: "Projects Completed: 500+",
       Industries: "Industries Served: 20+",

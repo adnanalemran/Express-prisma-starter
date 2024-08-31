@@ -1,6 +1,10 @@
 import React from "react";
 import bgImage from "@/utils/images/svg/th.svg"; /// Correct import for an image
 import ButtonPrimary from "@/components/common/ButtonPrimary";
+import { GoProjectRoadmap } from "react-icons/go";
+import { GrProjects } from "react-icons/gr";
+import { RiTeamFill } from "react-icons/ri";
+import { SiSemanticweb } from "react-icons/si";
 
 const MalaysiaPartnerOffice = () => {
   return (
@@ -22,36 +26,49 @@ const MalaysiaPartnerOffice = () => {
             that address their specific needs while leveraging our global
             expertise.
           </p>
-          <div className="flex flex-col md:flex-row md:justify-between">
-            <div className="py-6 md:w-1/2">
-              <p>
-                <strong>Total Operations:</strong> 5k+
-              </p>
-              <p>
-                <strong>Total Clients:</strong> 150+
-              </p>
-              <p>
-                <strong>Team Members:</strong> 10+
-              </p>
-              <p>
-                <strong>Projects Completed:</strong> 150+
-              </p>
-              <p>
-                <strong>Industries Served:</strong> 10+
-              </p>
-              <p>
-                <strong>Years in Business:</strong> 1+
-              </p>
-            </div>
-            <div className="py-6 md:w-1/2">
-              <h3 className="text-xl font-semibold">Areas of Collaboration:</h3>
-              <ul className="list-disc list-inside mt-4">
-                <li>Market Expansion Strategies</li>
-                <li>Joint Ventures and Alliances</li>
-                <li>Local IT Solutions</li>
-                <li>Shared Technology Resources</li>
-                <li>Regional Business Development</li>
-              </ul>
+          <div className="flex flex-col md:flex-row md:justify-between min-h-[200px]">
+            <div className="grid grid-cols-4 mt-10  w-full">
+              <div className="flex flex-col items-center gap-2 ">
+                <div className="p-4   bg-primary text-white rounded-full  shadow-2xl ">
+                  <GoProjectRoadmap
+                    className="
+                text-3xl   "
+                  />
+                </div>
+
+                <p> 70+ Clients</p>
+              </div>
+
+              <div className="flex flex-col items-center gap-2 ">
+                <div className="p-4   bg-primary text-white rounded-full  shadow-2xl ">
+                  <GrProjects
+                    className="
+                text-3xl   "
+                  />
+                </div>
+
+                <p> 30+ Industries Served</p>
+              </div>
+              <div className="flex flex-col items-center gap-2 ">
+                <div className="p-4   bg-primary text-white rounded-full  shadow-2xl ">
+                  <RiTeamFill
+                    className="
+                text-3xl   "
+                  />
+                </div>
+
+                <p> 20+ Members </p>
+              </div>
+              <div className="flex flex-col items-center gap-2 ">
+                <div className="p-4   bg-primary text-white rounded-full  shadow-2xl ">
+                  <SiSemanticweb
+                    className="
+                text-3xl   "
+                  />
+                </div>
+
+                <p> 120+ Operations</p>
+              </div>
             </div>
           </div>
           <ButtonPrimary text="Contact Us" sideLink="/" />

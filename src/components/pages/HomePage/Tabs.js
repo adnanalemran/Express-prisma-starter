@@ -6,10 +6,12 @@ import MalaysiaPartnerOffice from "./Tabs/MalaysiaTab";
 import { homePageLanguage } from "@/app/language/Lan-homepage";
 import useLanguage from "@/hook/useLanguage";
 import Thaitab from "./Tabs/Thaitab";
+import UsaTab from "./Tabs/UsaTab";
+import UKtab from "./Tabs/UKtab";
 
 const Tabs = () => {
   const len = useLanguage(homePageLanguage);
-  const [activeTab, setActiveTab] = useState("bd");
+  const [activeTab, setActiveTab] = useState("thai");
 
   const openCity = (cityName) => {
     setActiveTab(cityName);
@@ -60,12 +62,12 @@ const Tabs = () => {
           )}
           {activeTab === "usa" && (
             <div className="transition duration-300">
-              <Thaitab />
+              <UsaTab />
             </div>
           )}
           {activeTab === "uk" && (
             <div className="transition duration-300">
-              <Thaitab />
+              <UKtab />
             </div>
           )}
         </div>

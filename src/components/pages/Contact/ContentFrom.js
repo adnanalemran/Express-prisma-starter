@@ -35,8 +35,8 @@ const ContentForm = () => {
       if (response.ok) {
         Swal.fire({
           icon: 'success',
-          title: 'Success',
-          text: 'Your message has been sent successfully!',
+          title: 'Your message has been successfully sent.',
+          text: 'Our team will review your inquiry and get back to you as soon as possible. We appreciate your interest in Zaimah Technologies (Thailand) Co., Ltd and look forward to assisting you.If your inquiry is urgent, please feel free to call us at +8809617209581 for immediate assistance.',
         });
         setFormData({ fullName: '', email: '', message: '' }); // Clear the form
       } else {

@@ -1,23 +1,12 @@
 import React from "react";
-import bgImage from "@/utils/images/svg/bd.svg"; // Correct import for an image
+import bgImage from "@/utils/images/svg/th.svg"; /// Correct import for an image
 import ButtonPrimary from "@/components/common/ButtonPrimary";
-import useLanguage from "@/hook/useLanguage";
-import { homePageLanguage } from "@/app/language/Lan-homepage";
 import { GoProjectRoadmap } from "react-icons/go";
 import { GrProjects } from "react-icons/gr";
-import { FcBusinessman } from "react-icons/fc";
-import { SiSemanticweb } from "react-icons/si";
 import { RiTeamFill } from "react-icons/ri";
+import { SiSemanticweb } from "react-icons/si";
 
-const BangladeshTab = () => {
-  const len = useLanguage(homePageLanguage);
-  const title = len?.tabsSec?.Bangladesh?.title || "";
-
-  const lastSpaceIndex = title.lastIndexOf(" ");
-
-  const beginning = title.substring(0, lastSpaceIndex);
-  const lastWord = title.substring(lastSpaceIndex + 1);
-
+const UsaTab = () => {
   return (
     <div
       className="hero   rounded-lg bg-cover bg-center bg-no-repeat"
@@ -27,10 +16,16 @@ const BangladeshTab = () => {
     >
       <div className="hero-content text-neutral-content">
         <div className="text-black   p-6  ">
-          <h2 className="text-3xl  ">
-            {beginning} <span className="font-bold">{lastWord}</span>
+          <h2 className="text-3xl font-bold">
+            ZTL - Partner Office in <span className="font-bold">USA</span>
           </h2>
-          <p className="py-6">{len?.tabsSec?.Bangladesh?.subtitle}</p>
+          <p className="py-6">
+            Our partner office in Malaysia plays a crucial role in extending our
+            reach and capabilities across Southeast Asia. By collaborating with
+            local experts, we ensure that our clients receive tailored solutions
+            that address their specific needs while leveraging our global
+            expertise.
+          </p>
           <div className="flex flex-col md:flex-row md:justify-between min-h-[200px]">
             <div className="grid grid-cols-4 mt-10  w-full">
               <div className="flex flex-col items-center gap-2 ">
@@ -41,7 +36,7 @@ const BangladeshTab = () => {
                   />
                 </div>
 
-                <p> 100+ Clients</p>
+                <p> 70+ Clients</p>
               </div>
 
               <div className="flex flex-col items-center gap-2 ">
@@ -72,17 +67,16 @@ const BangladeshTab = () => {
                   />
                 </div>
 
-                <p> 600+ Operations</p>
+                <p> 120+ Operations</p>
               </div>
             </div>
           </div>
-          <div className="flex justify-end">
-            <ButtonPrimary text={len?.contactUs} sideLink="/contact" />
-          </div>
+          <ButtonPrimary text="Contact Us" sideLink="/" />
         </div>
       </div>
     </div>
   );
 };
 
-export default BangladeshTab;
+ 
+export default UsaTab;

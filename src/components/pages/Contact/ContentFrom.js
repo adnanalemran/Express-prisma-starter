@@ -1,7 +1,7 @@
-// components/ContentForm.js
 import { contactLanguage } from "@/app/language/Lan-Contact";
 import useLanguage from "@/hook/useLanguage";
 import React, { useState } from "react";
+import { toast } from "react-hot-toast";
 
 const ContentForm = () => {
   const lan = useLanguage(contactLanguage);
@@ -10,7 +10,7 @@ const ContentForm = () => {
     email: '',
     message: '',
   });
-  const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,8 +20,11 @@ const ContentForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    setIsSubmitting(true);
+    const toastId = toast.loading('Sending email...');
+
     try {
-      const response = await fetch('/api/send-email', { // Ensure this path is correct
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -30,13 +33,15 @@ const ContentForm = () => {
       });
 
       if (response.ok) {
-        setStatus('Email sent successfully');
+        toast.success('Email sent successfully!', { id: toastId });
         setFormData({ fullName: '', email: '', message: '' }); // Clear the form
       } else {
-        setStatus('Failed to send email');
+        toast.error('Failed to send email', { id: toastId });
       }
     } catch (error) {
-      setStatus('Failed to send email');
+      toast.error('Failed to send email', { id: toastId });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -56,6 +61,7 @@ const ContentForm = () => {
               value={formData.fullName}
               onChange={handleChange}
               className="w-full bg-white rounded border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
+              disabled={isSubmitting}
             />
           </div>
           <div className="mb-4">
@@ -69,6 +75,7 @@ const ContentForm = () => {
               value={formData.email}
               onChange={handleChange}
               className="w-full bg-white rounded border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
+              disabled={isSubmitting}
             />
           </div>
           <div className="mb-4">
@@ -82,6 +89,7 @@ const ContentForm = () => {
               value={formData.message}
               onChange={handleChange}
               className="w-full bg-white rounded border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
+              disabled={isSubmitting}
             />
           </div>
           <div className="flex justify-center">
@@ -89,9 +97,9 @@ const ContentForm = () => {
               type="submit"
               value={lan?.Submit || "Submit"}
               className="bg-primary hover:bg-orange-700 text-white px-8 py-2 rounded-lg w-full"
+              disabled={isSubmitting}
             />
           </div>
-          {status && <p className="text-center mt-4">{status}</p>}
         </div>
       </form>
     </div>

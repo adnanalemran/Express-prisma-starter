@@ -14,11 +14,14 @@ import image10 from "@/utils/images/logo/4x/Asset 9@4x.png";
 import image11 from "@/utils/images/logo/4x/Asset 10@4x.png";
 import image12 from "@/utils/images/logo/4x/Asset 12@4x.png";
 import SecTitle from "@/components/common/SecTitle";
+import { homePageLanguage } from "@/app/language/Lan-homepage";
+import useLanguage from "@/hook/useLanguage";
 
 const TrustedSection = () => {
+  const lan = useLanguage(homePageLanguage);
   return (
     <div className="  mx-auto py-8    lg:mx-8 ">
-      <SecTitle title="Trusted by over 400+ clients Zaimah Tech (THAILAND) CO., LTD.  worldwide" />
+      <SecTitle title={lan?.clientsSec?.title} />
       <div
         className="grid 
       grid-cols-2 md:grid-cols-3

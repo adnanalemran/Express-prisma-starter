@@ -2,9 +2,11 @@ import SecTitle from "@/components/common/SecTitle";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { IoLocationOutline, IoPhonePortraitOutline } from "react-icons/io5";
-import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
+import {  MdOutlinePhone } from "react-icons/md";
 
 const ContentSide = () => {
+ 
+
   return (
     <div>
       <div className="text-xl text-slate-600">Let’s work together</div>

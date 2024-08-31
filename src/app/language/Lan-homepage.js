@@ -66,6 +66,16 @@ const english = {
       ],
     },
   },
+  clientsSec:{
+    title: "Trusted by over 400+ clients Zaimah Tech (THAILAND) CO., LTD.  worldwide",
+  },
+  contactSec: {
+    title: "Start a Conversation",
+    subtitle:
+      "Connect with our specialists to develop innovative strategies for your digital products and drive real business value.",
+      button: "Contact Us",
+  },
+
 };
 
 const thai = {
@@ -137,6 +147,16 @@ const thai = {
       ],
     },
   },
+  clientsSec:{
+    title: "ได้รับความไว้วางใจจากลูกค้ามากกว่า 400+ บริษัท ไซมา เทค (ไทย) จำกัด ทั่วโลก",
+  },
+  contactSec: {
+    title: "เริ่มสนทนา",
+    subtitle:
+      "ติดต่อกับผู้เชี่ยวชาญของเราเพื่อพัฒนากลยุทธ์นวัตกรรมสำหรับผลิตภัณฑ์ดิจิทัลของคุณและสร้างค่าใช้งานจริง",
+      button: "ติดต่อเรา",
+  },
+ 
 };
 
 export const homePageLanguage = {

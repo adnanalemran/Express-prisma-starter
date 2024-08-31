@@ -36,7 +36,7 @@ const UKtab = () => {
                   />
                 </div>
 
-                <p> 70+ Clients</p>
+                <p> 40+ Clients</p>
               </div>
 
               <div className="flex flex-col items-center gap-2 ">
@@ -47,7 +47,7 @@ const UKtab = () => {
                   />
                 </div>
 
-                <p> 30+ Industries Served</p>
+                <p> 35+ Industries Served</p>
               </div>
               <div className="flex flex-col items-center gap-2 ">
                 <div className="p-4   bg-primary text-white rounded-full  shadow-2xl ">
@@ -57,7 +57,7 @@ const UKtab = () => {
                   />
                 </div>
 
-                <p> 20+ Members </p>
+                <p> 10+ Members </p>
               </div>
               <div className="flex flex-col items-center gap-2 ">
                 <div className="p-4   bg-primary text-white rounded-full  shadow-2xl ">
@@ -67,7 +67,7 @@ const UKtab = () => {
                   />
                 </div>
 
-                <p> 120+ Operations</p>
+                <p> 100+ Operations</p>
               </div>
             </div>
           </div>

@@ -71,13 +71,13 @@ const MegaNav = () => {
                 </li>
                 <li className="relative group px-3 py-2 hover:bg-tertiary  hover:rounded-full cursor-pointer  ">
                   <Link
-                    href="/"
+                    href="/partners"
                     className={` rounded-full  cursor-pointer   ${
-                      pathname === "/s" ? "active" : " "
+                      pathname === "/partners" ? "active" : " "
                     }`}
                   >
                     <span className="flex gap-3 items-center ">
-                      <p>{lan?.Partners} </p> <TiArrowSortedDown />
+                      <p>{lan?.Partners} </p>  
                     </span>
                   </Link>
                 </li>

@@ -5,6 +5,18 @@ import image from "@/utils/images/large/about.webp";
 import { MdWorkspacesOutline } from "react-icons/md";
 import Member from "@/components/pages/About/Member";
 import jabedLargeImage from "@/utils/images/person/jabedfull.jpeg";
+import adnan from "@/utils/images/employee/adnan.jpg";
+import arafat from "@/utils/images/employee/arafat.jpg";
+import tanvir from "@/utils/images/employee/tanver.jpg";
+import Taufik from "@/utils/images/employee/Taufik.jpg";
+import per1 from "@/utils/images/employee/1.png";
+import per2 from "@/utils/images/employee/Chanon Dalai.png";
+import per3 from "@/utils/images/employee/3.png";
+import per4 from "@/utils/images/employee/4.png";
+import per5 from "@/utils/images/employee/5.png";
+import per6 from "@/utils/images/employee/6.png";
+import per7 from "@/utils/images/employee/7.png";
+
 const page = () => {
   return (
     <div className="min-h-100 container mx-auto lg:pt-16 pt-6 p-4 ">
@@ -105,21 +117,87 @@ const page = () => {
               creating a brighter future through innovation.
             </p>
             <p className="text-end"> Jabed Akhter</p>
-            <p className="text-end"> CEO, Zaimah Technologies (Thailand) Co., Ltd</p>
+            <p className="text-end">
+              {" "}
+              CEO, Zaimah Technologies (Thailand) Co., Ltd
+            </p>
           </div>
         </div>
       </div>
 
       <h2 className="text-3xl text-center font-bold">Our Team</h2>
       <p className="text-center">
-        Meet the talented individuals who make up our team  ... 7+
+        Meet the talented individuals who make up our team ... 7+
       </p>
 
       <div className="pt-4 pb-16 grid lg:grid-cols-4  grid-cols-1 lg:gap-4 gap-2">
-        <Member name="John Doe" designation="CEO" />
-        <Member name="John Doe" designation="CEO" />
-        <Member name="John Doe" designation="CEO" />
-        <Member name="John Doe" designation="CEO" />
+        <Member name="Yusron Lateh" designation="Director" image={per1?.src} />{" "}
+        <Member
+          name="Chanon Dalai"
+          designation="Business Advisor"
+          image={per2?.src}
+        />{" "}
+        <Member
+          name="Solah mad-adam
+"
+          designation="Software Engineer
+"
+          image={per3?.src}
+        />
+        <Member
+          name="Azizun Usama
+
+"
+          designation="AI Engineer
+"
+          image={per4?.src}
+        />
+        <Member
+          name="Rimzan Hussain
+"
+          designation="Senior Product Manager
+"
+          image={per5?.src}
+        />
+        <Member
+          name="Laddawan Khan
+
+"
+          designation="Legal Advisor
+
+
+"
+          image={per6?.src}
+        />
+        <Member
+          name="Phyu Phyu Kyaw
+
+ "
+          designation="Business Developer
+
+"
+          image={per7?.src}
+        />
+        <Member
+          name="Arafat Hossain"
+          designation="Software engineer"
+          image={arafat.src}
+        />
+        <Member
+          name="Adnan Al emran "
+          designation="Software engineer"
+          image={adnan.src}
+        />{" "}
+        <Member
+          name="Md Tanvir Alam"
+          designation="Software engineer"
+          image={tanvir.src}
+        /> <Member
+          name="Taufique Elahi
+ "
+          designation="Software engineer"
+          image={Taufik.src}
+        />
       </div>
     </div>
   );

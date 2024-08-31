@@ -9,12 +9,11 @@ import {
 import { IoPricetagsOutline } from "react-icons/io5";
 import { HiOutlineHomeModern } from "react-icons/hi2";
 import { MdConnectWithoutContact } from "react-icons/md";
-// import logoImage from "@/app/asset/image/logo/logo3.png";
+ 
 import Link from "next/link";
-import Image from "next/image";
+import { BsGlobeEuropeAfrica } from "react-icons/bs";
 
-// Set the app element for accessibility
-// Modal.setAppElement("#root");
+ 
 
 const NavMobile = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -84,45 +83,17 @@ const NavMobile = () => {
                   Home
                 </Link>
               </li>
+              
               <li onClick={closeModal} className="p-4 bg-[#30b3ff0e] rounded">
                 <Link
-                  href="/come-in-soon"
+                  href="/ Partners"
                   className="  flex items-center text-sm "
                 >
-                  <AiOutlineCodeSandbox className="mr-2 text-brandColor text-xl" />
-                  Tours & Travels
+                  <BsGlobeEuropeAfrica className="mr-2 text-brandColor text-xl" />
+                  Partners
                 </Link>
               </li>
-              <li onClick={closeModal} className="p-4 bg-[#30b3ff0e] rounded">
-                <Link
-                  href="/come-in-soon"
-                  className="  flex items-center text-sm "
-                >
-                  <HiOutlineHomeModern className="mr-2 text-brandColor text-xl" />
-                  Property
-                </Link>
-              </li>
-              <li onClick={closeModal} className="p-4 bg-[#30b3ff0e] rounded">
-                <Link
-                  href="/come-in-soon"
-                  className="  flex items-center text-sm "
-                >
-                  <IoPricetagsOutline className="mr-2 text-brandColor text-xl" />
-                  Rentals
-                </Link>
-              </li>
-              <li
-                onClick={closeModal}
-                className="p-4 bg-[#30b3ff0e] rounded col-span-2"
-              >
-                <Link
-                  href="/come-in-soon"
-                  className="  flex items-center text-sm whitespace-nowrap "
-                >
-                  <IoPricetagsOutline className="mr-2 text-brandColor text-xl " />
-                  Accommodation and transportation
-                </Link>
-              </li>
+               
               <li onClick={closeModal} className="p-4 bg-[#30b3ff0e] rounded">
                 <Link href="about" className="  flex items-center text-sm ">
                   <AiOutlineDeploymentUnit className="mr-2 text-brandColor text-xl" />

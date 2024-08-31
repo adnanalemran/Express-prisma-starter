@@ -16,83 +16,67 @@ const Footer = () => {
                 <Image src={logoImage} width={150} alt="logo" />
               </Link>
               <p className="max-w-sm mt-2 text-gray-500  text-sm">
-                Leading tech industry force, driving innovation and delivering
-                cutting-edge solutions
+              A technology leader driving innovation and delivering cutting-edge software development solutions.
               </p>
             </div>
           </div>
 
-          <div className="mt-6 lg:mt-0 lg:flex-1">
+          <div className="my-6 lg:mt-0 lg:flex-1">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               <div>
                 <h3 className="text-gray-700 uppercase dark:text-white">
-                  About
+                Company
                 </h3>
-                <a
-                  href="#"
+                <Link 
+                  href="/about"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
-                  Company
-                </a>
+              About Us
+                </Link>
                 <a
-                  href="#"
+                  href="/contact"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
-                  community
+                  Contact Us
                 </a>
-                <a
-                  href="#"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  Careers
-                </a>
+              
               </div>
 
               <div>
                 <h3 className="text-gray-700 uppercase dark:text-white">
-                  Blog
+                Our Sister Concern
                 </h3>
                 <a
-                  href="#"
+                  href="http://dizilab.biz"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
-                  Tec
+                DiziLab
                 </a>
                 <a
-                  href="#"
+                  href="http://learnbyz.com"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
-                  Music
+                LearnByZ
                 </a>
-                <a
-                  href="#"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  Videos
-                </a>
+              
               </div>
 
               <div>
                 <h3 className="text-gray-700 uppercase dark:text-white">
                   Products
                 </h3>
+               
                 <a
-                  href="#"
+                  href="https://apartpro.xyz"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
-                  Mega cloud
+                 Apart Pro 
                 </a>
                 <a
-                  href="#"
+                  href="https://hrbee.xyz"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
-                  Aperion UI
-                </a>
-                <a
-                  href="#"
-                  className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-                >
-                  Meraki UI
+                HR Bee
                 </a>
               </div>
 
@@ -107,7 +91,7 @@ const Footer = () => {
 
         <div className="border-t-[1px] pt-3 border-neutral-300 ">
           <p className="text-center text-gray-500 dark:text-gray-400 text-sm">
-            Copyright ©2017-2024 Zaimah Technologies Limited. All Rights
+            Copyright ©2017-2024 ZAIMAH TECHNOLOGIES (THAILAND) CO., LTD. All Rights
             Reserved.
           </p>
         </div>

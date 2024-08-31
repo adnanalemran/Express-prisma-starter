@@ -16,7 +16,7 @@ const ServicesNav = () => {
               <div>
                 <ul className="mt-1 text-[15px]">
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
-                    <Link href="/Software-Development">
+                    <Link href="/Service/Software-Development">
                       <div className="flex gap-2    items-center py-1">
                         <div className="text-sm font-bold">
                           Custom & Enterprise Software
@@ -29,7 +29,7 @@ const ServicesNav = () => {
                     </Link>
                   </li>
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
-                    <Link href="/IT-Consulting-&-Audits">
+                    <Link href="/Service/IT-Consulting-&-Audits">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">
                           IT Consulting & Audits
@@ -43,7 +43,7 @@ const ServicesNav = () => {
                   </li>
 
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
-                    <Link href="/about">
+                    <Link href="/Service/Cloud-Solutions">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">Cloud Solutions</div>
                       </div>
@@ -54,7 +54,7 @@ const ServicesNav = () => {
                     </Link>
                   </li>
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
-                    <Link href="/about">
+                    <Link href="/Service/Cybersecurity-&-DataProtection">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">
                           Cybersecurity & Data Protection
@@ -72,7 +72,7 @@ const ServicesNav = () => {
               <div>
                 <ul className="mt-1 text-[15px]">
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
-                    <Link href="/Software-Development">
+                    <Link href="/Service/Technical-Support-&-System-Maintenance">
                       <div className="flex gap-2    items-center py-1">
                         <div className="text-sm font-bold">
                         Technical Support & System Maintenance
@@ -84,7 +84,7 @@ const ServicesNav = () => {
                     </Link>
                   </li>
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
-                    <Link href="/Enterprise-Software">
+                    <Link href="/Service/AI-&-Machine-Learning-Solutions">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">
                         AI & Machine Learning Solutions

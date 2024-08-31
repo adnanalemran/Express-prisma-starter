@@ -1,64 +1,101 @@
-import React from "react";
+// components/ContentForm.js
+import { contactLanguage } from "@/app/language/Lan-Contact";
+import useLanguage from "@/hook/useLanguage";
+import React, { useState } from "react";
 
-const ContentFrom = () => {
+const ContentForm = () => {
+  const lan = useLanguage(contactLanguage);
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    message: '',
+  });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/send-email', { // Ensure this path is correct
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('Email sent successfully');
+        setFormData({ fullName: '', email: '', message: '' }); // Clear the form
+      } else {
+        setStatus('Failed to send email');
+      }
+    } catch (error) {
+      setStatus('Failed to send email');
+    }
+  };
+
   return (
     <div className="p-4 bg-tertiary mx-auto rounded-xl lg:ml-16">
-      <h3 className="text-center text-2xl font-bold mt-8">
-        Get started with a free quotation
-      </h3>
-      <form>
-        <div className="   m-6  ">
-          <div className="  mb-4">
-            <label
-              htmlFor="full-name"
-              className="text-sm text-gray-600 font-semibold "
-            >
-              Full Name :
+      <h3 className="text-center text-2xl font-bold mt-8">{lan?.formTitle}</h3>
+      <form onSubmit={handleSubmit}>
+        <div className="m-6">
+          <div className="mb-4">
+            <label htmlFor="full-name" className="text-sm text-gray-600 font-semibold">
+              {lan?.FullName}:
             </label>
             <input
               type="text"
               id="full-name"
-              name="full-name"
-              className="w-full bg-white rounded border-none border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
+              name="fullName"
+              value={formData.fullName}
+              onChange={handleChange}
+              className="w-full bg-white rounded border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
             />
           </div>
-          <div className="  mb-4">
-            <label
-              htmlFor="email"
-              className="text-sm text-gray-600 font-semibold "
-            >
-              Email :
+          <div className="mb-4">
+            <label htmlFor="email" className="text-sm text-gray-600 font-semibold">
+              {lan?.Email}:
             </label>
             <input
               type="email"
               id="email"
               name="email"
-              className="w-full bg-white rounded border-none border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full bg-white rounded border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
             />
           </div>
-          <div className="  mb-4">
-            <label
-              htmlFor="message"
-              className="text-sm text-gray-600 font-semibold "
-            >
-              Message :
+          <div className="mb-4">
+            <label htmlFor="message" className="text-sm text-gray-600 font-semibold">
+              {lan?.Message}:
             </label>
             <textarea
               rows="3"
               id="message"
               name="message"
-              className="w-full bg-white rounded border-none border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full bg-white rounded border-gray-300 focus:border-primary focus:ring-2 focus:ring-orange-100 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out mt-2"
             />
           </div>
           <div className="flex justify-center">
-            <button className="bg-primary hover:bg-orange-700 text-white px-8 py-2 rounded-lg w-full">
-              Submit
-            </button>
+            <input
+              type="submit"
+              value={lan?.Submit || "Submit"}
+              className="bg-primary hover:bg-orange-700 text-white px-8 py-2 rounded-lg w-full"
+            />
           </div>
+          {status && <p className="text-center mt-4">{status}</p>}
         </div>
       </form>
     </div>
   );
 };
 
-export default ContentFrom;
+export default ContentForm;

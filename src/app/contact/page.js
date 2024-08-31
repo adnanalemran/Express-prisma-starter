@@ -1,3 +1,5 @@
+
+"use client";
 import ContentFrom from "@/components/pages/Contact/ContentFrom";
 import ContentSide from "@/components/pages/Contact/ContentSide";
 import React from "react";

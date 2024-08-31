@@ -1,7 +1,7 @@
 import { contactLanguage } from "@/app/language/Lan-Contact";
 import useLanguage from "@/hook/useLanguage";
 import React, { useState } from "react";
-import { toast } from "react-hot-toast";
+import Swal from 'sweetalert2';
 
 const ContentForm = () => {
   const lan = useLanguage(contactLanguage);
@@ -21,7 +21,7 @@ const ContentForm = () => {
     e.preventDefault();
 
     setIsSubmitting(true);
-    const toastId = toast.loading('Sending email...');
+
 
     try {
       const response = await fetch('/api/send-email', {
@@ -33,13 +33,25 @@ const ContentForm = () => {
       });
 
       if (response.ok) {
-        toast.success('Email sent successfully!', { id: toastId });
+        Swal.fire({
+          icon: 'success',
+          title: 'Success',
+          text: 'Your message has been sent successfully!',
+        });
         setFormData({ fullName: '', email: '', message: '' }); // Clear the form
       } else {
-        toast.error('Failed to send email', { id: toastId });
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Failed to send email.',
+        });
       }
     } catch (error) {
-      toast.error('Failed to send email', { id: toastId });
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Failed to send email.',
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -95,8 +107,8 @@ const ContentForm = () => {
           <div className="flex justify-center">
             <input
               type="submit"
-              value={lan?.Submit || "Submit"}
-              className="bg-primary hover:bg-orange-700 text-white px-8 py-2 rounded-lg w-full"
+              value={isSubmitting ? "Processing..." : lan?.Submit || "Submit"}
+              className="bg-primary hover:bg-orange-700 text-white px-8 py-2 rounded-lg w-full cursor-pointer"
               disabled={isSubmitting}
             />
           </div>

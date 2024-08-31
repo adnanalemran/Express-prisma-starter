@@ -63,7 +63,7 @@ const page = () => {
       </div>
 
       <div className="py-24">
-        <div className="flex justify-between lg:gap-8 flex-col lg:flex-row ">
+        <div className="flex justify-between lg:gap-8 flex-col lg:flex-row items-center ">
           <div className="w-full lg:w-2/6 ">
             <img
               src={jabedLargeImage.src}
@@ -76,30 +76,43 @@ const page = () => {
               Voice of the CEO
             </h2>
             <p className="  text-justify py-8 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
-              semLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              eget semLorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Sed eget semLorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Sed eget semLorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Sed eget semLorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Sed eget semLorem ipsum dolor sit
-              amet, consectetur adipiscing elit. Sed eget semLorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Sed eget semLorem ipsum
-              dolor sit amet, consectetur adipiscing elit. Sed eget semLorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
-              semLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              eget semLorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Sed eget sem
+              Dear Valued Clients, Partners, and Stakeholders,
+              <br />
+              <br />
+              As the CEO of Zaimah Technologies (Thailand) Co., Ltd, I am
+              honored to lead a team of passionate professionals committed to
+              driving innovation and delivering exceptional technology
+              solutions. At Zaimah Technologies, we understand the rapid pace of
+              change in today’s digital landscape and the challenges that
+              businesses face in staying competitive. Our mission is to empower
+              our clients with cutting-edge technology, ensuring they are
+              well-equipped to navigate these changes and achieve sustained
+              growth.
+              <br />
+              Our expertise in mobile application development, e-commerce
+              solutions, cloud computing, and web development reflects our
+              commitment to excellence. We pride ourselves on our ability to
+              deliver customized solutions that meet the unique needs of each
+              client, enabling them to achieve their business goals.
+              <br />
+              We believe in building long-term relationships based on trust,
+              integrity, and mutual success. Your success is our success, and we
+              are dedicated to providing the highest level of service and
+              support to help you reach new heights.
+              <br />
+              Thank you for choosing Zaimah Technologies as your technology
+              partner. We look forward to continuing our journey together and
+              creating a brighter future through innovation.
             </p>
             <p className="text-end"> Jabed Akhter</p>
-            <p className="text-end"> CEO of ZTL</p>
+            <p className="text-end"> CEO, Zaimah Technologies (Thailand) Co., Ltd</p>
           </div>
         </div>
       </div>
 
       <h2 className="text-3xl text-center font-bold">Our Team</h2>
       <p className="text-center">
-        Meet the talented individuals who make up our team
+        Meet the talented individuals who make up our team  ... 7+
       </p>
 
       <div className="pt-4 pb-16 grid lg:grid-cols-4  grid-cols-1 lg:gap-4 gap-2">

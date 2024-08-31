@@ -10,7 +10,7 @@ const ContentSide = () => {
   const lan = useLanguage(contactLanguage);
 
   return (
-    <div>
+    <div className="px-4">
       <div className="text-xl text-slate-600">{lan?.TopTitle}</div>
       <SecTitle title={lan?.title} />
 

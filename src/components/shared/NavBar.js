@@ -36,15 +36,15 @@ const Navbar = () => {
       {/* Top Navbar */}
       <div className={`min-w-26 py-4 bg-white border-b-[1px] border-stick `}>
         <div className="container mx-auto flex items-center text-sm justify-between gap-10 lg:px-16 px-4">
-          <div className="lg:text-2xl font-bold flex gap-2 items-center">
+          <div className="lg:text-2xl  font-bold flex gap-2 items-center">
             <Link href="/" className="flex justify-center items-center gap-2">
               <Image src={logoImage} width={50} alt="logo" />
 
               <div className="flex flex-col">
-                <p className="text-xl  ">
+                <p className="lg:text-xl  ">
                   ZAIMAH TECHNOLOGIES (THAILAND) CO., LTD
                 </p>
-                <p className="text-sm">
+                <p className="text-sm hidden lg:flex">
                   บริษัท ไซมา เทคโนโลยี (ประเทศไทย) จำกัด
                 </p>
               </div>

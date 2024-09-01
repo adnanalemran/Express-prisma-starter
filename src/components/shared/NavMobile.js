@@ -3,11 +3,10 @@ import Modal from "react-modal";
 import {
   AiOutlineClose,
   AiOutlineHome,
-  AiOutlineCodeSandbox,
+ 
   AiOutlineDeploymentUnit,
 } from "react-icons/ai";
-import { IoPricetagsOutline } from "react-icons/io5";
-import { HiOutlineHomeModern } from "react-icons/hi2";
+ 
 import { MdConnectWithoutContact } from "react-icons/md";
  
 import Link from "next/link";
@@ -86,7 +85,7 @@ const NavMobile = () => {
               
               <li onClick={closeModal} className="p-4 bg-[#30b3ff0e] rounded">
                 <Link
-                  href="/ Partners"
+                  href="/partners"
                   className="  flex items-center text-sm "
                 >
                   <BsGlobeEuropeAfrica className="mr-2 text-brandColor text-xl" />

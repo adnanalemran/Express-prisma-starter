@@ -8,9 +8,9 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState(() => {
     // Initialize state from localStorage if available
     if (typeof window !== "undefined") {
-      return window.localStorage.getItem("language") || "english";
+      return window.localStorage.getItem("language") || "thai";
     }
-    return "english";
+    return "thai";
   });
 
   useEffect(() => {

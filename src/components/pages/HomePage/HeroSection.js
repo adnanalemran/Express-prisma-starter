@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div>
       <div
-        className="hero min-h-[95vh] "
+        className="hero lg:*:min-h-[95vh] min-h-[70vh] "
         style={{
           backgroundImage: `url(${heroImage.src})`,
         }}
@@ -27,7 +27,7 @@ const HeroSection = () => {
               <div className="lg:text-xl text-xl ">{lan?.heroParagraph2}</div>
             </div>
 
-            <button  className=" bg-white  text-secondary py-2 rounded-full px-4 hover:text-black border-[2px]  ">
+            <button className=" bg-white  text-secondary py-2 rounded-full px-4 hover:text-black border-[2px]  ">
               {lan?.getStarted}
             </button>
           </div>

@@ -44,7 +44,7 @@ const english = {
       "We provide a wide range of services to help businesses grow and scale.",
   },
   tabsSec: {
-    title: "Office of ZTL Offices",
+    title: "Office of ZTL ",
     subtitle:
       "We follow a systematic process to ensure that we deliver the best results.",
     Bangladesh: {

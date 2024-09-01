@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "@/utils/images/svg/bd.svg"; // Correct import for an image
+// import bgImage from "@/utils/images/svg/bd.svg"; // Correct import for an image
 import ButtonPrimary from "@/components/common/ButtonPrimary";
 import useLanguage from "@/hook/useLanguage";
 import { homePageLanguage } from "@/app/language/Lan-homepage";
@@ -8,28 +8,22 @@ import { GrProjects } from "react-icons/gr";
 import { SiSemanticweb } from "react-icons/si";
 import { RiTeamFill } from "react-icons/ri";
 
-const BangladeshTab = () => {
+const CommonTab = (props) => {
+  const { header, dis, clients, industries, teamMembers, operations,bgImage } = props;
   const len = useLanguage(homePageLanguage);
   const title = len?.tabsSec?.Bangladesh?.title || "";
 
-  const lastSpaceIndex = title.lastIndexOf(" ");
-
-  const beginning = title.substring(0, lastSpaceIndex);
-  const lastWord = title.substring(lastSpaceIndex + 1);
-
   return (
     <div
-      className="hero   rounded-lg bg-cover bg-center bg-no-repeat  lg:h-[500px]"
+      className="hero  rounded-lg bg-cover bg-center bg-no-repeat  lg:h-[500px]"
       style={{
         backgroundImage: `url(${bgImage.src})`,
       }}
     >
       <div className="hero-content text-neutral-content">
         <div className="text-black   p-6  ">
-          <h2 className="text-3xl  ">
-            {beginning} <span className="font-bold">{lastWord}</span>
-          </h2>
-          <p className="lg:py-6">{len?.tabsSec?.Bangladesh?.subtitle}</p>
+          <h2 className="text-3xl  ">{header}</h2>
+          <p className="lg:py-6"> {dis}</p>
           <div className="flex flex-col md:flex-row md:justify-between ">
             <div className="grid lg:grid-cols-4 grid-cols-2 mt-10  w-full bg-white   rounded-xl p-2">
               <div className="flex flex-col items-center gap-2 ">
@@ -40,7 +34,7 @@ const BangladeshTab = () => {
                   />
                 </div>
 
-                <p> 100+ Clients</p>
+                <p> {clients}</p>
               </div>
 
               <div className="flex flex-col items-center gap-2 ">
@@ -51,7 +45,7 @@ const BangladeshTab = () => {
                   />
                 </div>
 
-                <p> 30+ Industries Served</p>
+                <p> {industries}</p>
               </div>
               <div className="flex flex-col items-center gap-2 ">
                 <div className="p-4   bg-primary text-white rounded-full  shadow-2xl ">
@@ -61,7 +55,7 @@ const BangladeshTab = () => {
                   />
                 </div>
 
-                <p> 20+ Members </p>
+                <p> {teamMembers}</p>
               </div>
               <div className="flex flex-col items-center gap-2 ">
                 <div className="p-4   bg-primary text-white rounded-full  shadow-2xl ">
@@ -71,7 +65,7 @@ const BangladeshTab = () => {
                   />
                 </div>
 
-                <p> 600+ Operations</p>
+                <p> {operations}</p>
               </div>
             </div>
           </div>
@@ -84,4 +78,4 @@ const BangladeshTab = () => {
   );
 };
 
-export default BangladeshTab;
+export default CommonTab;

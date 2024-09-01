@@ -1,14 +1,20 @@
 import { useState } from "react";
-import BangladeshTab from "./Tabs/BangladeshTab";
+
 import { FaChevronRight } from "react-icons/fa6";
 import SecTitle from "@/components/common/SecTitle";
-import MalaysiaPartnerOffice from "./Tabs/MalaysiaTab";
+
 import { homePageLanguage } from "@/app/language/Lan-homepage";
 import useLanguage from "@/hook/useLanguage";
-import Thaitab from "./Tabs/Thaitab";
+
 import UsaTab from "./Tabs/UsaTab";
 import UKtab from "./Tabs/UKtab";
+import CommonTab from "./Tabs/CommonTab";
 
+import bgImageBD from "@/utils/images/svg/bd.svg";
+import bgImageThai from "@/utils/images/svg/th.svg";
+import bgImageMal from "@/utils/images/svg/mal.svg";
+import bgImageUsa from "@/utils/images/svg/usa.svg";
+import bgImageUk from "@/utils/images/svg/uk.svg";
 const Tabs = () => {
   const len = useLanguage(homePageLanguage);
   const [activeTab, setActiveTab] = useState("thai");
@@ -47,28 +53,68 @@ const Tabs = () => {
         <div className="w-full lg:w-3/4 bg-white flex lg:relative ">
           {activeTab === "thai" && (
             <div className="transition duration-300">
-              <Thaitab />
+              <CommonTab
+                header="ZTL Office - in Thailand"
+                clients="50+ Clients"
+                industries="20+ Industries Served"
+                teamMembers="10+ Team Members"
+                operations="100+ Operations"
+                bgImage={bgImageThai}
+                dis="At ZTL, we pride ourselves on delivering cutting-edge technology solutions tailored to meet our clients' needs. Our commitment to innovation and excellence has earned us a reputation as a trusted partner in the IT industry. We specialize in a wide range of services, including software development, IT consulting, and system integration."
+              />
             </div>
           )}
           {activeTab === "bd" && (
             <div className="transition duration-300">
-              <BangladeshTab />
+              <CommonTab
+                header="ZTL Office - in Bangladesh"
+                clients="100+ Clients"
+                industries="30+ Industries Served"
+                teamMembers="15+ Team Members"
+                operations="600+ Operations"
+                bgImage={bgImageBD}
+                dis="At ZTL, we pride ourselves on delivering cutting-edge technology solutions tailored to meet our clients' needs. Our commitment to innovation and excellence has earned us a reputation as a trusted partner in the IT industry. We specialize in a wide range of services, including software development, IT consulting, and system integration."
+              />
             </div>
           )}
 
           {activeTab === "Malaysia" && (
             <div className="transition duration-300">
-              <MalaysiaPartnerOffice />
+              <CommonTab
+                header="ZTL Office - in Malaysia"
+                clients="70+ Clients"
+                industries="20+ Industries Served"
+                teamMembers="15+ Team Members"
+                operations="300+ Operations"
+                bgImage={bgImageMal}
+                dis="Our partner office in Malaysia plays a crucial role in extending our reach and capabilities across Southeast Asia. By collaborating with local experts, we ensure that our clients receive tailored solutions that address their specific needs while leveraging our global expertise."
+              />
             </div>
           )}
           {activeTab === "usa" && (
             <div className="transition duration-300">
-              <UsaTab />
+              <CommonTab
+                header="ZTL Office - in USA"
+                clients="20+ Clients"
+                industries="180+ Industries Served"
+                teamMembers="10+ Team Members"
+                operations="70+ Operations"
+                bgImage={bgImageUsa}
+                dis="Our partner office in the USA plays a crucial role in extending our reach and capabilities across the country. By collaborating with local experts, we ensure that our clients receive tailored solutions that address their specific needs while leveraging our global expertise."
+              />
             </div>
           )}
           {activeTab === "uk" && (
             <div className="transition duration-300">
-              <UKtab />
+              <CommonTab
+                header="ZTL Office - in UK"
+                clients="20+ Clients"
+                industries="100+ Industries Served"
+                teamMembers="10+ Team Members"
+                operations="70+ Operations"
+                bgImage={bgImageUk}
+                dis="Our partner office in the UK is essential in expanding our reach and capabilities across the region. By working closely with local experts, we provide our clients with customized solutions that meet their specific needs while leveraging our global expertise."
+              />
             </div>
           )}
         </div>

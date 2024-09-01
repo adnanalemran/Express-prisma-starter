@@ -16,15 +16,15 @@ const StatusCount = () => {
             text="Experts"
             subText="  in the team of professionals"
           />
-          <StatusFlowPoint
-            year="2+"
-            text="Years"
-            subText="  of experience in the industry"
-          />
+         
           <StatusFlowPoint
            year="7+"
            text="Nationalities"
             subText="  in the team of professionals "
+          /> <StatusFlowPoint
+            year="2+"
+            text="Years"
+            subText="  of experience in the industry"
           />
         </div>
       </div>

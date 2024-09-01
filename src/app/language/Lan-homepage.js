@@ -70,7 +70,7 @@ const english = {
   },
   clientsSec: {
     title:
-      "Trusted by over 400+ clients Zaimah Tech (THAILAND) CO., LTD.  worldwide",
+      "Trusted by over 100+ clients Zaimah Tech worldwide",
   },
   contactSec: {
     title: "Start a Conversation",
@@ -151,7 +151,7 @@ const thai = {
   },
   clientsSec: {
     title:
-      "ได้รับความไว้วางใจจากลูกค้ามากกว่า 400+ บริษัท ไซมา เทค (ไทย) จำกัด ทั่วโลก",
+      "ได้รับความไว้วางใจจากลูกค้ามากกว่า 100+ รายทั่วโลก Zaimah Tech",
   },
   contactSec: {
     title: "เริ่มสนทนา",

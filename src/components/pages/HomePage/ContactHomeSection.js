@@ -4,7 +4,7 @@ import useLanguage from "@/hook/useLanguage";
 import React from "react";
 
 const ContactHomeSection = () => {
-  const lan = useLanguage(homePageLanguage)
+  const lan = useLanguage(homePageLanguage);
   return (
     <div>
       <div
@@ -18,13 +18,10 @@ const ContactHomeSection = () => {
         <div className="hero-content text-white text-center">
           <div className=" ">
             <h1 className="mb-5 lg:text-5xl text-3xl  font-bold">
-            {lan.contactSec.title}
+              {lan.contactSec.title}
             </h1>
-            <p className="mb-5">
-              {lan?.contactSec?.subtitle}
-            </p>
-            <ButtonPrimary text={lan?.contactSec?.button}sideLink="/contact" />
-            
+            <p className="mb-5 text-lg">{lan?.contactSec?.subtitle}</p>
+            <ButtonPrimary text={lan?.contactSec?.button} sideLink="/contact" />
           </div>
         </div>
       </div>

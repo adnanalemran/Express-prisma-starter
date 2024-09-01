@@ -3,16 +3,13 @@ import Modal from "react-modal";
 import {
   AiOutlineClose,
   AiOutlineHome,
- 
   AiOutlineDeploymentUnit,
 } from "react-icons/ai";
- 
+
 import { MdConnectWithoutContact } from "react-icons/md";
- 
 import Link from "next/link";
 import { BsGlobeEuropeAfrica } from "react-icons/bs";
-
- 
+import { LuMenu } from "react-icons/lu";
 
 const NavMobile = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -30,9 +27,11 @@ const NavMobile = () => {
       <button
         onClick={openModal}
         href="/demo"
-        className="lg:hidden flex font-light btn btn-sm hover:bg-[#035d7b1a] bg-[#035d7b0c] border-0"
+        className="lg:hidden flex font-light  border-0 "
       >
-        <span className="capitalize font-semibold text-black ">MENU</span>
+        <span className="font-semibold text-black text-2xl ">
+          <LuMenu />
+        </span>
       </button>
 
       <div className="w-full  px-3 z-[500] uppercase ">
@@ -82,17 +81,14 @@ const NavMobile = () => {
                   Home
                 </Link>
               </li>
-              
+
               <li onClick={closeModal} className="p-4 bg-[#30b3ff0e] rounded">
-                <Link
-                  href="/partners"
-                  className="  flex items-center text-sm "
-                >
+                <Link href="/partners" className="  flex items-center text-sm ">
                   <BsGlobeEuropeAfrica className="mr-2 text-brandColor text-xl" />
                   Partners
                 </Link>
               </li>
-               
+
               <li onClick={closeModal} className="p-4 bg-[#30b3ff0e] rounded">
                 <Link href="about" className="  flex items-center text-sm ">
                   <AiOutlineDeploymentUnit className="mr-2 text-brandColor text-xl" />

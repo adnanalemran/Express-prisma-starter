@@ -10,6 +10,7 @@ import { MdConnectWithoutContact } from "react-icons/md";
 import Link from "next/link";
 import { BsGlobeEuropeAfrica } from "react-icons/bs";
 import { LuMenu } from "react-icons/lu";
+import { LanguageSwitcher } from "../LanguageSwitcher";
 
 const NavMobile = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -24,15 +25,18 @@ const NavMobile = () => {
 
   return (
     <div>
-      <button
-        onClick={openModal}
-        href="/demo"
-        className="lg:hidden flex font-light  border-0 "
-      >
-        <span className="font-semibold text-black text-2xl ">
-          <LuMenu />
-        </span>
-      </button>
+      <div className="flex gap-2">
+        <LanguageSwitcher />
+        <button
+          onClick={openModal}
+          href="/demo"
+          className="lg:hidden flex font-light  border-0 "
+        >
+          <span className="font-semibold text-black text-2xl ">
+            <LuMenu />
+          </span>
+        </button>
+      </div>
 
       <div className="w-full  px-3 z-[500] uppercase ">
         <Modal
@@ -62,14 +66,7 @@ const NavMobile = () => {
         >
           <div>
             <div className="flex  justify-between items-start">
-              <button onClick={closeModal} className="text-xl pb-3">
-                {/* <Image
-                  width={170}
-                  src={logoImage}
-                  className="pt-2"
-                  alt="logo"
-                /> */}
-              </button>
+              <button onClick={closeModal} className="text-xl pb-3"></button>
               <div className="text-2xl pt-2 text-[#090c0e] cursor-pointer">
                 <AiOutlineClose onClick={closeModal} className="w-5" />
               </div>

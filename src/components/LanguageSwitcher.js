@@ -9,9 +9,12 @@ export function LanguageSwitcher() {
 
   return (
     <>
-      <MdOutlineLocationOn className="text-xl" />
-
-      <select className="flex gap-2" value={language} onChange={handleChange}>
+      <MdOutlineLocationOn className="text-xl " />
+      <select
+        className="flex gap-2  rounded-xl p-1"
+        value={language}
+        onChange={handleChange}
+      >
         <option value="thai">ไทย</option>
         <option value="english">English</option>
       </select>

@@ -6,8 +6,7 @@ import SecTitle from "@/components/common/SecTitle";
 import { homePageLanguage } from "@/app/language/Lan-homepage";
 import useLanguage from "@/hook/useLanguage";
 
-import UsaTab from "./Tabs/UsaTab";
-import UKtab from "./Tabs/UKtab";
+ 
 import CommonTab from "./Tabs/CommonTab";
 
 import bgImageBD from "@/utils/images/svg/bd.svg";

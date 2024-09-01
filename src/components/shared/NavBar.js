@@ -10,6 +10,7 @@ import NavMobile from "./NavMobile";
 import MegaNav from "./MegaNav";
 import { LanguageSwitcher } from "../LanguageSwitcher";
 import useLanguage from "@/hook/useLanguage";
+import { MdOutlineCall } from "react-icons/md";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -49,16 +50,18 @@ const Navbar = () => {
             </Link>
           </div>
           <div>
-            <div className="lg:flex gap-0 items-center justify-center hidden">
+            <div className="lg:flex gap-2 items-center justify-center hidden">
               <LanguageSwitcher />
-              <ul>
-                <Link
-                  href="tel:+66840673605"
-                  className="bg-brandColor whitespace-nowrap mr-1 text-black ml-1 btn-sm rounded-full btn"
-                >
-                  <li>+66840673605</li>
-                </Link>
-              </ul>
+
+              <Link
+                href="tel:+66840673605"
+                className="flex items-center gap-0 cursor-pointer p-2  bg-neutral-100 border-gray-300 rounded-full  hover:bg-zinc-200"
+              >
+                <p className="flex items-center gap-1">
+                  {" "}
+                  <MdOutlineCall className="text-base" /> +66840673605
+                </p>
+              </Link>
             </div>
             <div className="lg:hidden gap-0 text-xs items-center justify-center pr-2">
               <ul>

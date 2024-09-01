@@ -5,7 +5,6 @@ import {
   AiOutlineHome,
   AiOutlineDeploymentUnit,
 } from "react-icons/ai";
-
 import { MdConnectWithoutContact } from "react-icons/md";
 import Link from "next/link";
 import { BsGlobeEuropeAfrica } from "react-icons/bs";
@@ -25,7 +24,7 @@ const NavMobile = () => {
 
   return (
     <div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 items-center">
         <LanguageSwitcher />
         <button
           onClick={openModal}

@@ -12,6 +12,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 
+// import Swiper core and required modules
+import hrbee from "@/utils/images/product/hrbee.png";
+import apartpro from "@/utils/images/product/apartpro.png";
+
 const page = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const lan = useLanguage(lanPortfolio);
@@ -38,11 +42,20 @@ const page = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <WebItems />
+              <WebItems
+                BgImage={hrbee.src}
+                title="HR Bee"
+                siteLink="https://hrbee.xyz"
+              />
             </SwiperSlide>{" "}
             <SwiperSlide>
-              <WebItems />
-            </SwiperSlide>
+              <WebItems
+                BgImage={apartpro.src}
+                title="Apart Pro"
+                siteLink="https://apartpro.xyz"
+              />
+            </SwiperSlide>{" "}
+           
           </Swiper>
         </div>
       </section>

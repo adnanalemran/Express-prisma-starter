@@ -42,11 +42,9 @@ const Navbar = () => {
 
               <div className="flex flex-col">
                 <p className="lg:text-xl hidden lg:flex ">
-                บริษัท ไซมา เทคโนโลยี 
+                  บริษัท ไซมา เทคโนโลยี
                 </p>
-                <p className="text-sm ">
-                     ZAIMAH TECHNOLOGIES  
-                </p>
+                <p className="text-sm ">ZAIMAH TECHNOLOGIES</p>
               </div>
             </Link>
           </div>
@@ -55,10 +53,10 @@ const Navbar = () => {
               <LanguageSwitcher />
               <ul>
                 <Link
-                  href="tel:+8809617209581"
+                  href="tel:+66840673605"
                   className="bg-brandColor whitespace-nowrap mr-1 text-black ml-1 btn-sm rounded-full btn"
                 >
-                  <li>+8809617209581</li>
+                  <li>+66840673605</li>
                 </Link>
               </ul>
             </div>

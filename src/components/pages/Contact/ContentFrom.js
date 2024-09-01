@@ -1,14 +1,14 @@
 import { contactLanguage } from "@/app/language/Lan-Contact";
 import useLanguage from "@/hook/useLanguage";
 import React, { useState } from "react";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 
 const ContentForm = () => {
   const lan = useLanguage(contactLanguage);
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    message: '',
+    fullName: "",
+    email: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -22,36 +22,35 @@ const ContentForm = () => {
 
     setIsSubmitting(true);
 
-
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
+      const response = await fetch("/api/send-email", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
         Swal.fire({
-          icon: 'success',
-          title: 'Message Sent!',
-          text: 'We’ll review your inquiry and respond soon. For urgent matters, call +8809617209581.',
+          icon: "success",
+          title: "Message Sent!",
+          text: "We’ll review your inquiry and respond soon. For urgent matters, call +66840673605.",
         });
-        
-        setFormData({ fullName: '', email: '', message: '' }); 
+
+        setFormData({ fullName: "", email: "", message: "" });
       } else {
         Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Failed to send email.',
+          icon: "error",
+          title: "Oops...",
+          text: "Failed to send email.",
         });
       }
     } catch (error) {
       Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Failed to send email.',
+        icon: "error",
+        title: "Oops...",
+        text: "Failed to send email.",
       });
     } finally {
       setIsSubmitting(false);
@@ -64,7 +63,10 @@ const ContentForm = () => {
       <form onSubmit={handleSubmit}>
         <div className="m-6">
           <div className="mb-4">
-            <label htmlFor="full-name" className="text-sm text-gray-600 font-semibold">
+            <label
+              htmlFor="full-name"
+              className="text-sm text-gray-600 font-semibold"
+            >
               {lan?.FullName}:
             </label>
             <input
@@ -78,7 +80,10 @@ const ContentForm = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="text-sm text-gray-600 font-semibold">
+            <label
+              htmlFor="email"
+              className="text-sm text-gray-600 font-semibold"
+            >
               {lan?.Email}:
             </label>
             <input
@@ -92,7 +97,10 @@ const ContentForm = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="text-sm text-gray-600 font-semibold">
+            <label
+              htmlFor="message"
+              className="text-sm text-gray-600 font-semibold"
+            >
               {lan?.Message}:
             </label>
             <textarea

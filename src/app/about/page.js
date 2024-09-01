@@ -30,7 +30,7 @@ const page = () => {
       <div className="flex flex-col lg:flex-row lg:gap-16">
         <div className="w-full lg:w-1/2">
           <p className="text-justify">{lan?.dis}</p>
-          <div className="grid  grid-cols-2 gap-4 justify-between lg:mt-30 py-10 lg:py-0">
+          <div className="grid  lg:grid-cols-2 gap-4 justify-between lg:mt-30 py-10 lg:py-0">
             <div className="flex  items-center lg:gap-4 gap-1 ">
               <div className=" text-3xl bg-primary p-3 rounded-full text-white">
                 <MdWorkspacesOutline />
@@ -100,7 +100,7 @@ const page = () => {
       <h2 className="text-3xl text-center font-bold">{lan?.ourTeams?.title}</h2>
       <p className="text-center py-4">{lan?.ourTeams?.dis}</p>
 
-      <div className="pt-4 pb-16 grid lg:grid-cols-4  grid-cols-1 lg:gap-4 gap-2">
+      <div className="pt-4 pb-16 grid lg:grid-cols-4  grid-cols-2 lg:gap-4 gap-2">
         <Member name="Yusron Lateh" designation="Director" image={per1?.src} />{" "}
         <Member
           name="Chanon Dalai"

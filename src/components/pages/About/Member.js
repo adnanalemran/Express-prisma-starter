@@ -5,7 +5,7 @@ const Member = (props) => {
   const { name, designation, image } = props;
   return (
     <>
-      <div className="max-w-sm mx-auto  bg-white shadow-xl rounded-lg text-gray-900">
+      <div className="max-w-sm mx-auto  bg-white shadow-2 rounded-lg text-gray-900">
         <div className="rounded-t-lg h-32 overflow-hidden">
           <Image
             width={300}

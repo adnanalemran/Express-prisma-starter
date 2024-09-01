@@ -1,19 +1,18 @@
+"use client";
 import React from "react";
 import ItemsPartners from "./ItemsPartners";
 import SecTitle from "@/components/common/SecTitle";
+import useLanguage from "@/hook/useLanguage";
+import { LanPartners } from "../language/Lan-partners";
 
-const page = () => {
+const Page = () => {
+  const lan = useLanguage(LanPartners);
+
   return (
-    <div className="bg-gray-100    lg:mx-18 ">
-      <div className="   ">
-        <SecTitle title="       Our Partners " subtitle="" />
-        <p className="lg:mx-0 mx-3  pb-8">
-          At Zaimah Technologies  , we are proud to
-          collaborate with a diverse network of partners who share our
-          commitment to innovation, excellence, and customer satisfaction. Our
-          partnerships are a testament to our dedication to delivering the best
-          possible solutions for our clients.
-        </p>
+    <div className="bg-gray-100 lg:mx-18">
+      <div>
+        <SecTitle title={lan?.title} subtitle="" />
+        <p className="lg:mx-0 mx-3 pb-8">{lan?.subtitle}</p>
       </div>
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="absolute inset-x-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0">
@@ -53,24 +52,24 @@ const page = () => {
           </svg>
         </div>
 
-        <h2 className="text-xl py-2">Key Partnerships:</h2>
+        <h2 className="text-xl py-2">{lan?.Key.title}</h2>
 
         <div className="relative lg:flex gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <ItemsPartners
-            title="Technology Partners"
-            description="We work with leading technology providers to integrate the latest tools and platforms into our solutions, ensuring our clients have access to cutting-edge technologies. "
+            title={lan?.Key.key1.title}
+            description={lan?.Key.key1.dis}
           />
           <ItemsPartners
-            title="Industry Collaborations"
-            description="Our collaborations with industry leaders across various sectors help us stay ahead of market trends and deliver solutions that are relevant and effective. "
+            title={lan?.Key.key2.title}
+            description={lan?.Key.key2.dis}
           />
           <ItemsPartners
-            title="Strategic Alliances:"
-            description="By forming strategic alliances with other businesses, we enhance our service offerings and deliver comprehensive solutions that meet the evolving needs of our clients. "
-          />{" "}
+            title={lan?.Key.key3.title}
+            description={lan?.Key.key3.dis}
+          />
           <ItemsPartners
-            title="Global Network"
-            description="Our global partnerships allow us to extend our reach and offer our services to clients around the world, bringing international expertise to local markets."
+            title={lan?.Key.key4.title}
+            description={lan?.Key.key4.dis}
           />
         </div>
       </div>
@@ -78,4 +77,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

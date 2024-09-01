@@ -47,13 +47,13 @@ const Footer = () => {
                 Our Sister Concern
                 </h3>
                 <a
-                  href="http://dizilab.biz"
+                  href="#"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                 DiziLab
                 </a>
                 <a
-                  href="http://learnbyz.com"
+                  href="#"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                 >
                 LearnByZ

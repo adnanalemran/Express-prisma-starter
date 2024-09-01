@@ -4,7 +4,7 @@ const english = {
   heroParagraph:
     "A leading force in the technology industry, driving innovation and excellence across various domains.",
   heroParagraph2:
-    " As a power house of technology, we are committed to delivering cutting edge solutions in software development services.",
+    "  we are committed to delivering cutting edge solutions in software development services.",
   getStarted: "Get Started",
   seeMore: "See More",
   contactUs: "Contact Us",
@@ -69,8 +69,7 @@ const english = {
     },
   },
   clientsSec: {
-    title:
-      "Trusted by over 100+ clients Zaimah Tech worldwide",
+    title: "Trusted by over 100+ clients Zaimah Tech worldwide",
   },
   contactSec: {
     title: "Start a Conversation",
@@ -82,6 +81,9 @@ const english = {
 
 const thai = {
   ZTLThai: "ZAIMAH TECHNOLOGIES  ",
+  heroParagraph:
+    "ผู้นำที่สำคัญในอุตสาหกรรมเทคโนโลยี ขับเคลื่อนนวัตกรรมและความเป็นเลิศในหลายสาขา",
+  heroParagraph2: "เรามุ่งมั่นที่จะนำเสนอโซลูชั่นล้ำสมัยในบริการพัฒนาซอฟต์แวร์",
   sub1: "เราใช้เครื่องมือดิจิทัล แพลตฟอร์ม และกลยุทธ์ต่าง ๆ เพื่อเพิ่มประสิทธิภาพ ผลผลิต นวัตกรรม และความสามารถในการแข่งขันโดยรวม",
   sub2: "นวัตกรรมดิจิทัลเพื่อการเติบโต",
   sub3: "เปลี่ยนแนวคิดให้เป็นความจริง",
@@ -150,8 +152,7 @@ const thai = {
     },
   },
   clientsSec: {
-    title:
-      "ได้รับความไว้วางใจจากลูกค้ามากกว่า 100+ รายทั่วโลก Zaimah Tech",
+    title: "ได้รับความไว้วางใจจากลูกค้ามากกว่า 100+ รายทั่วโลก Zaimah Tech",
   },
   contactSec: {
     title: "เริ่มสนทนา",

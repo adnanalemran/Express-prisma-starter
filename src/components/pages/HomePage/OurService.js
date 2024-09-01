@@ -10,7 +10,7 @@ const OurService = () => {
   return (
     <>
       <div
-        className="hero min-h-[90vh] -mt-48 "
+        className="hero min-h-[90vh] lg:-mt-48  -mt-80"
         style={{
           backgroundImage: `url(${bgImage.src})`,
         }}

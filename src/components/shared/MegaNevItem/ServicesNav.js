@@ -1,7 +1,10 @@
+import { lanServicesNav } from "@/app/language/Nav/Lan-ServicesNav";
+import useLanguage from "@/hook/useLanguage";
 import Link from "next/link";
 import React from "react";
 
 const ServicesNav = () => {
+  const lan = useLanguage(lanServicesNav);
   return (
     <div>
       <div className=" z-999 h-50 absolute top-4 -left-30 transition group-hover:translate-y-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-500 ease-in-out group-hover:transform   transform ">
@@ -10,7 +13,7 @@ const ServicesNav = () => {
 
           <div className="relative z-10 w-230  ">
             <p className="uppercase tracking-wider text-gray-500 font-medium text-[13px] border-b-[1px] my-3 py-2">
-              Cloud Solutions
+             {lan?.title}
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div>
@@ -19,12 +22,11 @@ const ServicesNav = () => {
                     <Link href="/Service/Software-Development">
                       <div className="flex gap-2    items-center py-1">
                         <div className="text-sm font-bold">
-                          Custom & Enterprise Software
+                         {lan?.Item1.title}
                         </div>
                       </div>
                       <div className="text-xs  font-light   ">
-                        Tailored solutions for web, mobile, and enterprise
-                        systems.
+                        {lan?.Item1.description}
                       </div>
                     </Link>
                   </li>
@@ -32,12 +34,11 @@ const ServicesNav = () => {
                     <Link href="/Service/IT-Consulting-&-Audits">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">
-                          IT Consulting & Audits
+                          {lan?.Item2.title}
                         </div>
                       </div>
                       <div className="text-xs  font-light   ">
-                        Expert advice and detailed assessments for IT
-                        optimization and security.
+                        {lan?.Item2.description}
                       </div>
                     </Link>
                   </li>
@@ -45,11 +46,10 @@ const ServicesNav = () => {
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
                     <Link href="/Service/Cloud-Solutions">
                       <div className="flex  gap-2  items-center py-1">
-                        <div className="text-sm font-bold">Cloud Solutions</div>
+                        <div className="text-sm font-bold">  {lan?.Item3.title} </div>
                       </div>
                       <div className="text-xs  font-light  ">
-                        Seamless cloud migration and ongoing management for
-                        scalable, secure operations.
+                        {lan?.Item3.description}
                       </div>
                     </Link>
                   </li>
@@ -57,12 +57,11 @@ const ServicesNav = () => {
                     <Link href="/Service/Cybersecurity-&-DataProtection">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">
-                          Cybersecurity & Data Protection
+                          {lan?.Item4.title}
                         </div>
                       </div>
                       <div className="text-xs  font-light  ">
-                        Real-time threat management and robust data protection
-                        measures.
+                        {lan?.Item4.description}
                       </div>
                     </Link>
                   </li>
@@ -75,11 +74,11 @@ const ServicesNav = () => {
                     <Link href="/Service/Technical-Support-&-System-Maintenance">
                       <div className="flex gap-2    items-center py-1">
                         <div className="text-sm font-bold">
-                        Technical Support & System Maintenance
+                          {lan?.Item5.title}
                         </div>
                       </div>
                       <div className="text-xs  font-light   ">
-                      Extensive IT support and regular system upkeep for efficiency.
+                        {lan?.Item5.description}
                       </div>
                     </Link>
                   </li>
@@ -87,11 +86,11 @@ const ServicesNav = () => {
                     <Link href="/Service/AI-&-Machine-Learning-Solutions">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">
-                        AI & Machine Learning Solutions
+                          {lan?.Item6.title}
                         </div>
                       </div>
                       <div className="text-xs  font-light   ">
-                      Integrating AI and ML to automate processes and enhance capabilities.
+                        {lan?.Item6.description}
                       </div>
                     </Link>
                   </li>
@@ -99,10 +98,10 @@ const ServicesNav = () => {
                   <li className="p-2 hover:bg-[#ff303018] rounded ">
                     <Link href="/Service/Digital-Transformation-&-Automation">
                       <div className="flex  gap-2  items-center py-1">
-                        <div className="text-sm font-bold">Digital Transformation & Automation</div>
+                        <div className="text-sm font-bold">    {lan?.Item7.title}  </div>
                       </div>
                       <div className="text-xs  font-light  ">
-                      Streamlining operations with digital strategies and process automation.
+                        {lan?.Item7.description}
                       </div>
                     </Link>
                   </li>
@@ -110,18 +109,16 @@ const ServicesNav = () => {
                     <Link href="/Service/IoT-Solutions">
                       <div className="flex  gap-2  items-center py-1">
                         <div className="text-sm font-bold">
-                        IoT Solutions
+                          {lan?.Item8.title}
                         </div>
                       </div>
                       <div className="text-xs  font-light  ">
-                      Developing IoT systems for real-time data and smart infrastructure improvements.
+                        {lan?.Item8.description}
                       </div>
                     </Link>
                   </li>
                 </ul>
               </div>
-
-               
             </div>
           </div>
         </div>

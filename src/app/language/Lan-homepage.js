@@ -44,7 +44,7 @@ const english = {
       "We provide a wide range of services to help businesses grow and scale.",
   },
   tabsSec: {
-    title: "Office of ZTL ",
+    title: "Global Office ZAIMAH TECHNOLOGIES ",
     subtitle:
       "We follow a systematic process to ensure that we deliver the best results.",
     Bangladesh: {
@@ -74,7 +74,7 @@ const english = {
   contactSec: {
     title: "Start a Conversation",
     subtitle:
-      "Connect with our specialists to develop innovative strategies for your digital products and drive real business value.",
+      "Partner with our specialists to craft innovative strategies for your digital products, delivering tangible business value.",
     button: "Contact Us",
   },
 };

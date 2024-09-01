@@ -54,6 +54,36 @@ const PortfolioPage = () => {
           </Swiper>
         </div>
       </section>
+      <section className="bg-white pt-4">
+        <SecTitle title={lan?.sec1?.title} subtitle={lan?.sec1?.subtitle} />
+
+        <div className="py-4">
+          <Swiper
+            loop={true}
+            slidesPerView={1}
+            spaceBetween={30}
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <WebItems
+                BgImage={hrbee.src}
+                title="HR Bee"
+                siteLink="https://hrbee.xyz"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <WebItems
+                BgImage={apartpro.src}
+                title="Apart Pro"
+                siteLink="https://apartpro.xyz"
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
     </div>
   );
 };

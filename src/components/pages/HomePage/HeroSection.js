@@ -22,10 +22,12 @@ const HeroSection = () => {
                 {lan?.ZTLThai}
               </h1>
             </div>
+            <div className="py-8">
+              <div className="lg:text-xl text-xl  ">{lan?.heroParagraph}</div>
+              <div className="lg:text-xl text-xl ">{lan?.heroParagraph2}</div>
+            </div>
 
-            <div className="lg:text-xl text-xl py-8">{lan?.heroParagraph}</div>
-
-            <button className=" bg-white  text-secondary py-2 rounded-full px-4 hover:text-black border-[2px]  ">
+            <button  className=" bg-white  text-secondary py-2 rounded-full px-4 hover:text-black border-[2px]  ">
               {lan?.getStarted}
             </button>
           </div>

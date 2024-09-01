@@ -120,7 +120,7 @@ const ServiceItem = () => {
                   SPECIAL
                 </h2>
                 <h1 className="lg:text-4xl text-2xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
-                  E-Commerce Website Development
+                  E-Commerce Development
                 </h1>
                 <p className="flex items-center gap-2 text-gray-600 mb-2">
                   <FaCheck />

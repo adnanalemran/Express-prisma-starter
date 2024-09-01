@@ -8,7 +8,7 @@ const page = () => {
       <div className="   ">
         <SecTitle title="       Our Partners " subtitle="" />
         <p className="lg:mx-0 mx-3  pb-8">
-          At Zaimah Technologies (Thailand) Co., Ltd, we are proud to
+          At Zaimah Technologies  , we are proud to
           collaborate with a diverse network of partners who share our
           commitment to innovation, excellence, and customer satisfaction. Our
           partnerships are a testament to our dedication to delivering the best

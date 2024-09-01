@@ -1,8 +1,10 @@
 const english = {
-  ZTLThai: "ZAIMAH TECHNOLOGIES (THAILAND) CO., LTD",
+  ZTLThai: "ZAIMAH TECHNOLOGIES  ",
 
   heroParagraph:
-    "A leading force in the technology industry, driving innovation and excellence across various domains. As a power house of technology, we are committed to delivering cutting edge solutions in software development services.",
+    "A leading force in the technology industry, driving innovation and excellence across various domains.",
+  heroParagraph2:
+    " As a power house of technology, we are committed to delivering cutting edge solutions in software development services.",
   getStarted: "Get Started",
   seeMore: "See More",
   contactUs: "Contact Us",
@@ -42,11 +44,11 @@ const english = {
       "We provide a wide range of services to help businesses grow and scale.",
   },
   tabsSec: {
-    title: "Network of ZTL Offices",
+    title: "Office of ZTL Offices",
     subtitle:
       "We follow a systematic process to ensure that we deliver the best results.",
     Bangladesh: {
-      title: "ZTL - Headquarters in Bangladesh",
+      title: "ZTL - in Bangladesh",
       subtitle:
         "At ZTL, we pride ourselves on delivering cutting-edge technology solutions tailored to meet our clients' needs. Our commitment to innovation and excellence has earned us a reputation as a trusted partner in the IT industry. We specialize in a wide range of services, including software development, IT consulting, and system integration.",
 
@@ -66,20 +68,20 @@ const english = {
       ],
     },
   },
-  clientsSec:{
-    title: "Trusted by over 400+ clients Zaimah Tech (THAILAND) CO., LTD.  worldwide",
+  clientsSec: {
+    title:
+      "Trusted by over 400+ clients Zaimah Tech (THAILAND) CO., LTD.  worldwide",
   },
   contactSec: {
     title: "Start a Conversation",
     subtitle:
       "Connect with our specialists to develop innovative strategies for your digital products and drive real business value.",
-      button: "Contact Us",
+    button: "Contact Us",
   },
-
 };
 
 const thai = {
-  ZTLThai: "บริษัท ไซมา เทคโนโลยี จำกัด (ไทย)",
+  ZTLThai: "ZAIMAH TECHNOLOGIES  ",
   sub1: "เราใช้เครื่องมือดิจิทัล แพลตฟอร์ม และกลยุทธ์ต่าง ๆ เพื่อเพิ่มประสิทธิภาพ ผลผลิต นวัตกรรม และความสามารถในการแข่งขันโดยรวม",
   sub2: "นวัตกรรมดิจิทัลเพื่อการเติบโต",
   sub3: "เปลี่ยนแนวคิดให้เป็นความจริง",
@@ -147,16 +149,16 @@ const thai = {
       ],
     },
   },
-  clientsSec:{
-    title: "ได้รับความไว้วางใจจากลูกค้ามากกว่า 400+ บริษัท ไซมา เทค (ไทย) จำกัด ทั่วโลก",
+  clientsSec: {
+    title:
+      "ได้รับความไว้วางใจจากลูกค้ามากกว่า 400+ บริษัท ไซมา เทค (ไทย) จำกัด ทั่วโลก",
   },
   contactSec: {
     title: "เริ่มสนทนา",
     subtitle:
       "ติดต่อกับผู้เชี่ยวชาญของเราเพื่อพัฒนากลยุทธ์นวัตกรรมสำหรับผลิตภัณฑ์ดิจิทัลของคุณและสร้างค่าใช้งานจริง",
-      button: "ติดต่อเรา",
+    button: "ติดต่อเรา",
   },
- 
 };
 
 export const homePageLanguage = {

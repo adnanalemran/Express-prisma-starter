@@ -7,12 +7,9 @@ import image3 from "@/utils/images/sliderImage/img3.jpg";
 import image4 from "@/utils/images/sliderImage/img4.jpg";
 import ButtonPrimary from "@/components/common/ButtonPrimary";
 
-import hrLogo from "@/utils/images/logo/hr.png";
-import ipLogo from "@/utils/images/logo/ip.png";
-import swLogo from "@/utils/images/logo/sw.png";
-import apLogo from "@/utils/images/logo/ap.png";
 import useLanguage from "@/hook/useLanguage";
 import { homePageLanguage } from "@/app/language/Lan-homepage";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 const CustomSlider = () => {
   const len = useLanguage(homePageLanguage);
@@ -173,7 +170,11 @@ const CustomSlider = () => {
         </div>
       </div>
       <div className="nextPrevArrows">
-        <button className="prev bg-primary">{"<"}</button>
+        <button className="prev bg-primary flex justify-center items-center  ">
+ 
+          <FaAngleLeft /> 
+          <FaAngleRight /> 
+        </button>
         <button className="next bg-primary ">{">"}</button>
       </div>
     </div>

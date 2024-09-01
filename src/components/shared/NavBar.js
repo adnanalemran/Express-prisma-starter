@@ -41,11 +41,11 @@ const Navbar = () => {
               <Image src={logoImage} width={50} alt="logo" />
 
               <div className="flex flex-col">
-                <p className="lg:text-xl  ">
-                  ZAIMAH TECHNOLOGIES (THAILAND) CO., LTD
+                <p className="lg:text-xl hidden lg:flex ">
+                บริษัท ไซมา เทคโนโลยี 
                 </p>
-                <p className="text-sm hidden lg:flex">
-                  บริษัท ไซมา เทคโนโลยี (ประเทศไทย) จำกัด
+                <p className="text-sm ">
+                     ZAIMAH TECHNOLOGIES  
                 </p>
               </div>
             </Link>

@@ -91,7 +91,7 @@ const page = () => {
               Dear Valued Clients, Partners, and Stakeholders,
               <br />
               <br />
-              As the CEO of Zaimah Technologies (Thailand) Co., Ltd, I am
+              As the CEO of Zaimah Technologies  , I am
               honored to lead a team of passionate professionals committed to
               driving innovation and delivering exceptional technology
               solutions. At Zaimah Technologies, we understand the rapid pace of
@@ -119,7 +119,7 @@ const page = () => {
             <p className="text-end"> Jabed Akhter</p>
             <p className="text-end">
               {" "}
-              CEO, Zaimah Technologies (Thailand) Co., Ltd
+              CEO, Zaimah Technologies  
             </p>
           </div>
         </div>
@@ -192,7 +192,8 @@ const page = () => {
           name="Md Tanvir Alam"
           designation="Software engineer"
           image={tanvir.src}
-        /> <Member
+        />{" "}
+        <Member
           name="Taufique Elahi
  "
           designation="Software engineer"

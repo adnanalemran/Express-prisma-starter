@@ -22,7 +22,7 @@ export async function POST(req) {
       text: `Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`,
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-                 <h2 style="color: #F26042;">ZAIMAH TECHNOLOGIES (THAILAND) CO., LTD</h2>
+                 <h2 style="color: #F26042;">ZAIMAH TECHNOLOGIES </h2>
           <h2 style="color: #444;">New Message from ${fullName}</h2>
           <p><strong>Name:</strong> ${fullName}</p>
           <p><strong>Email:</strong> ${email}</p>
@@ -43,7 +43,7 @@ export async function POST(req) {
       text: `Hello ${fullName},\n\nThank you for reaching out to us. We have received your message and will get back to you shortly.\n\nBest regards,\nZaimah Tech Team`,
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
-                 <h2 style="color: #F26042;">ZAIMAH TECHNOLOGIES (THAILAND) CO., LTD</h2>
+                 <h2 style="color: #F26042;">ZAIMAH TECHNOLOGIES  </h2>
           <h2 style="color: #444;">Thank You for Contacting Us, ${fullName}!</h2>
           <p>We have received your message and will get back to you shortly.</p>
           <p style="background-color: #f4f4f4; padding: 10px; border-radius: 5px;">"${message}"</p>

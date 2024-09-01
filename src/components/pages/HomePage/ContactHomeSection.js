@@ -23,7 +23,8 @@ const ContactHomeSection = () => {
             <p className="mb-5">
               {lan?.contactSec?.subtitle}
             </p>
-            <ButtonPrimary text={lan?.contactSec?.button}sideLink="/" />
+            <ButtonPrimary text={lan?.contactSec?.button}sideLink="/contact" />
+            
           </div>
         </div>
       </div>

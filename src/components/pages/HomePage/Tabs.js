@@ -24,8 +24,8 @@ const Tabs = () => {
       <div className="mt-10 flex flex-col-reverse lg:flex-row rounded-lg p-3 container mx-auto bg-[#ffb39a27]">
         <div className="tab w-full lg:w-1/4 pl-0">
           {[
-            { name: "Bangladesh Office", city: "bd" },
             { name: "Thailand Office", city: "thai" },
+            { name: "Bangladesh Office", city: "bd" },
             { name: "Malaysia Office", city: "Malaysia" },
             { name: "USA Office", city: "usa" },
             { name: "UK Office", city: "uk" },
@@ -45,16 +45,17 @@ const Tabs = () => {
         </div>
 
         <div className="w-full lg:w-3/4 bg-white flex lg:relative ">
-          {activeTab === "bd" && (
-            <div className="transition duration-300">
-              <BangladeshTab />
-            </div>
-          )}
           {activeTab === "thai" && (
             <div className="transition duration-300">
               <Thaitab />
             </div>
           )}
+          {activeTab === "bd" && (
+            <div className="transition duration-300">
+              <BangladeshTab />
+            </div>
+          )}
+
           {activeTab === "Malaysia" && (
             <div className="transition duration-300">
               <MalaysiaPartnerOffice />

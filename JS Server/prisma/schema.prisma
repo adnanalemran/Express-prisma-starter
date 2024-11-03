@@ -1,0 +1,52 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id           Int     @id @default(autoincrement())
+  name         String
+  email        String  @unique
+  password     String
+  profileImage String? 
+  phoneNumber  String
+  freeTrial    Boolean @default(true)
+  createdAt    DateTime @default(now())
+  
+  // Relation field
+  cards        Card[]  // One-to-many relation: A User can have multiple Cards
+}
+
+model Card {
+  id           Int          @id @default(autoincrement())
+  email        String
+  companyName  String
+  designation  String
+  name         String
+  mobileNumber String
+  address      String
+  image        String?       // Optional field for image URL
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  
+  // Foreign key to User
+  userId       Int
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Relation field for PhoneNumber
+  phoneNumbers PhoneNumber[]
+}
+
+model PhoneNumber {
+  id       Int    @id @default(autoincrement())
+  number   String
+  cardId   Int
+  card     Card   @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+
